@@ -1,0 +1,57 @@
+/* Wordpress theme for Northwest Orthotics and Prosthetics, Inc.
+ * Copyright (C) 2017  Matthew Trescott
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* The Breeze Color Palette, from the KDE Visual Design Group.
+ * https://community.kde.org/KDE_Visual_Design_Group/HIG/Color
+ */
+
+//  Light and dark
+$lite-navy-blue = #34495e;
+$dark-navy-blue = #2c3e50;
+$charcoal-grey = #31363b;
+$shade-black = #232629;
+$icon-grey = #4d4d4d;
+$basic-medium-grey = #7f8c8d;
+$cool-medium-grey = #95a5a6;
+$cardboard-grey = #eff0f1;
+$paper-white = #fcfcfc;
+
+// Cool colors
+$mellow-turquoise = #1cdc9a;
+$verdant-green = #11d116;
+$icon-green = #2ecc71;
+$medium-blue-green = #27ae60;
+$light-teal = #1abc9c;
+$medium-teal = #16a085;
+$medium-ocean-blue = #3498db;
+$dark-ocean-blue = #2980b9;
+$plasma-blue = #3daee9;
+$icon-blue = #1d99f3;
+$medium-light-violet = #9b59b6;
+$medium-violet = #8e44ad;
+
+// Warm colors
+$pale-orange-red = #e74c30;
+$icon-red = #da4453;
+$danger-red = #ed1515;
+$clay-red = #c0392b;
+$icon-orange = #f47750;
+$dull-orange = #d35400;
+$icon-yellow = #fdbc4b;
+$beware-orange = #f67400;
+$key-lime-pie-green = $c9ce3b;
+$medium-yellow-orange = $f39c1f;
