@@ -8,12 +8,20 @@
     {
       "selection": [
         {
+          "order": 24,
+          "id": 7,
+          "name": "im-user",
+          "prevSize": 32,
+          "code": 59654,
+          "tempChar": ""
+        },
+        {
           "order": 21,
           "id": 6,
           "name": "dialog-information",
           "prevSize": 32,
           "code": 59650,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 15,
@@ -21,15 +29,15 @@
           "name": "draw-cross",
           "prevSize": 32,
           "code": 59651,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
-          "order": 16,
+          "order": 23,
           "id": 4,
           "name": "application-menu",
           "prevSize": 32,
           "code": 59652,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 17,
@@ -37,7 +45,7 @@
           "name": "go-home",
           "prevSize": 32,
           "code": 59653,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 20,
@@ -45,7 +53,7 @@
           "name": "user-group-new",
           "prevSize": 32,
           "code": 59648,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 1,
@@ -56,13 +64,30 @@
         "license": "GNU Lesser General Public License v3.0+",
         "licenseURL": "https://www.gnu.org/licenses/lgpl-3.0.en.html",
         "importSize": {
-          "width": 22,
-          "height": 22
+          "width": 24,
+          "height": 24
         }
       },
       "height": 1024,
       "prevSize": 32,
       "icons": [
+        {
+          "id": 7,
+          "paths": [
+            "M512 0.005c0 0 0 0 0 0-141.383 0-255.997 114.614-255.997 255.998 0.001 141.384 114.614 255.998 255.997 255.998 0 0 0 0 0 0s0 0 0.001 0c141.383 0 255.997-114.614 255.997-255.998-0.001-141.384-114.614-255.998-255.997-255.998 0 0 0 0 0 0zM512 64.004c106.037 0 191.997 85.96 191.998 191.998-0.001 106.039-85.961 191.998-191.998 191.998s-191.997-85.96-191.998-191.998c0.001-106.039 85.961-191.998 191.998-191.998zM512 576c-259.951 0.318-474.494 194.314-507.097 445.424l64.226 2.571c32.377-218.182 218.251-383.723 442.842-383.996 224.701 0.208 410.641 165.772 442.725 381.547l64.799 2.449c-32.883-253.724-247.493-447.744-507.469-447.996z"
+          ],
+          "attrs": [
+            {
+              "fill": "rgb(77, 77, 77)"
+            }
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 32,
+          "tags": [
+            "im-user"
+          ]
+        },
         {
           "id": 6,
           "paths": [
@@ -160,7 +185,7 @@
           "name": "nworthotics-logo",
           "prevSize": 32,
           "code": 59649,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 0,
@@ -206,7 +231,10 @@
       "metadata": {
         "fontFamily": "icomoon",
         "majorVersion": 1,
-        "minorVersion": 0
+        "minorVersion": 0,
+        "fontURL": "https://github.com/MTres19/nworthotics-theme",
+        "description": "Icon set mostly based off of KDE Breeze icon set (except nworthotics logo)",
+        "license": "LGPLv3+"
       },
       "metrics": {
         "emSize": 1024,
@@ -214,10 +242,14 @@
         "whitespace": 50
       },
       "embed": false,
-      "showSelector": false,
+      "showSelector": true,
       "showMetrics": false,
       "noie8": true,
-      "ie7": false
+      "ie7": false,
+      "showMetadata": false,
+      "showVersion": true,
+      "cssVars": true,
+      "cssVarsFormat": "scss"
     },
     "imagePref": {
       "prefix": "icon-",
