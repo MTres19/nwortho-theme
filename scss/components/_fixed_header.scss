@@ -1,19 +1,19 @@
+@mixin vert-center
+{
+    // Thanks http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+    //position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .fixed-header-bar
 {
-    @extend .container;
     min-width: 100%;
     background-color: $medium-blue-green;
     height: 5rem;
     //box-shadow: 0rem -0.5rem 3rem 1.5rem $shade-black;
-    display: flex;
-    align-items: center;
-}
-
-#header-items-container
-{
-    margin: auto 0;
-    display: flex;
-    align-items: center;
+    //display: flex;
+    //align-items: center;
 }
 
 .header-bar-item
@@ -23,24 +23,14 @@
 
 #header-bar-menu-button
 {
-    padding: {
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 1rem;
-    }
+    font-size: 2rem;
 }
 
 // HEADER BAR TITLE __________________________________________________
 
 #header-bar-title
 {
-    padding: {
-        top: 0;
-        bottom: 0;
-        right: 1rem;
-        left: 1rem;
-    }
+    font-size: 2.5rem;
 }
 
 // Larger than tablet
@@ -49,6 +39,25 @@
     {
         display: block;
     }
+
+    #header-bar-items-container
+    {
+        display: inline-flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-around;
+        
+        @include vert-center;
+    }
+    
+    .header-bar-item
+    {
+        border-left: {
+            width: 2rem;
+            style: solid;
+            color: transparent;
+        }
+    }
 }
 
 // Smaller than tablet
@@ -56,6 +65,33 @@
     #header-bar-title
     {
         display: none;
+    }
+    
+    #header-bar-items-container
+    {
+        height: 100%;
+        text-align: center;
+        position: relative;
+    }
+    
+    #header-bar-menu-button
+    {
+        position: absolute;
+        left: 0;
+        @include vert-center;
+        
+        border-left: {
+            width: 2rem;
+            style: solid;
+            color: transparent;
+        }
+    }
+    
+    #header-bar-logo
+    {
+        display: inline-block;
+        position: relative;
+        @include vert-center;
     }
 }
 
