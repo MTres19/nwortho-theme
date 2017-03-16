@@ -11,9 +11,8 @@
     min-width: 100%;
     background-color: $medium-blue-green;
     height: 5rem;
-    //box-shadow: 0rem -0.5rem 3rem 1.5rem $shade-black;
-    //display: flex;
-    //align-items: center;
+    position: fixed;
+    z-index: 100;
 }
 
 .header-bar-item
@@ -25,8 +24,6 @@
 {
     font-size: 2rem;
 }
-
-// HEADER BAR TITLE __________________________________________________
 
 #header-bar-title
 {
@@ -45,7 +42,6 @@
         display: inline-flex;
         position: relative;
         align-items: center;
-        justify-content: space-around;
         
         @include vert-center;
     }
@@ -94,5 +90,3 @@
         @include vert-center;
     }
 }
-
-// END HEADER BAR TITLE __________________________________________________________
