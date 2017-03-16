@@ -1,0 +1,16 @@
+// Skeleton
+@import "../Skeleton-Sass/scss/skeleton.scss";
+
+// Styling
+@import "helper/color_palette";
+
+@import "components/fixed_header";
+@import "components/nav";
+
+// Resources
+@import "fonts/nworthotics-icons/style.css";
+
+*
+{
+    box-sizing: border-box;
+}

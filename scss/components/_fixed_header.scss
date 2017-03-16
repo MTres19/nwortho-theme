@@ -1,0 +1,62 @@
+.fixed-header-bar
+{
+    @extend .container;
+    min-width: 100%;
+    background-color: $medium-blue-green;
+    height: 5rem;
+    //box-shadow: 0rem -0.5rem 3rem 1.5rem $shade-black;
+    display: flex;
+    align-items: center;
+}
+
+#header-items-container
+{
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-bar-item
+{
+    font-size: 3rem;
+}
+
+#header-bar-menu-button
+{
+    padding: {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 1rem;
+    }
+}
+
+// HEADER BAR TITLE __________________________________________________
+
+#header-bar-title
+{
+    padding: {
+        top: 0;
+        bottom: 0;
+        right: 1rem;
+        left: 1rem;
+    }
+}
+
+// Larger than tablet
+@media (min-width: 750px) {
+    #header-bar-title
+    {
+        display: block;
+    }
+}
+
+// Smaller than tablet
+@media (max-width: 750px) {
+    #header-bar-title
+    {
+        display: none;
+    }
+}
+
+// END HEADER BAR TITLE __________________________________________________________
