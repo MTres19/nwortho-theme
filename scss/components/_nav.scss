@@ -1,0 +1,74 @@
+#left-nav-drawer
+{
+    background-color: $shade-black;
+    padding-top: 5rem;
+    box-shadow: 10px 10px 5px #31363b;
+}
+
+#left-nav-drawer > #left-nav-links-list
+{
+    list-style-type: none;
+    margin: 0;
+    padding: {
+        left: 2rem;
+        top: 1rem;
+    }
+    font-size: 1.7rem;
+}
+
+#left-nav-links-list > li
+{
+    display: block;
+    color: $cardboard-grey;
+}
+
+#left-nav-links-list > li::before
+{
+    font-family: 'nworthotics-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    
+    padding-right: 1rem;
+}
+
+#left-nav-link-home::before
+{
+    content: "\e905";
+}
+
+#left-nav-link-about::before
+{
+    content: "\e902";
+}
+
+#left-nav-link-services::before
+{
+    content: "\e901";
+}
+
+#left-nav-link-team::before
+{
+    content: "\e900";
+}
+
+// Larger than tablet
+@media(min-width: 750px)
+{
+    #left-nav-drawer
+    {
+        display: block;
+        position: fixed;
+        width: 20rem;
+        height: 100%;
+    }
+}
+    
