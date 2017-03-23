@@ -1,8 +1,8 @@
 {
   "metadata": {
     "name": "Northwest Orthotics and Prosthetics",
-    "lastOpened": 1488762029609,
-    "created": 1488761996267
+    "lastOpened": 1490282226419,
+    "created": 1490282223120
   },
   "iconSets": [
     {
@@ -24,7 +24,7 @@
           "tempChar": ""
         },
         {
-          "order": 15,
+          "order": 25,
           "id": 5,
           "name": "draw-cross",
           "prevSize": 32,
@@ -83,7 +83,7 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "im-user"
           ]
@@ -98,7 +98,7 @@
               "fill": "rgb(77, 77, 77)"
             }
           ],
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "dialog-information"
           ],
@@ -117,7 +117,7 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "draw-cross"
           ]
@@ -134,7 +134,7 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "application-menu"
           ]
@@ -168,7 +168,7 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "user-group-new"
           ]
@@ -208,7 +208,7 @@
           "attrs": [],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "nworthotics logo"
           ],
@@ -219,7 +219,6 @@
       "colorThemes": []
     }
   ],
-  "uid": -1,
   "preferences": {
     "showGlyphs": true,
     "showCodes": true,
@@ -265,5 +264,6 @@
     "historySize": 100,
     "gridSize": 16,
     "showGrid": true
-  }
+  },
+  "uid": -1
 }
