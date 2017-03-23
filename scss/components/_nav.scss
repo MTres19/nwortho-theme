@@ -71,4 +71,26 @@
         height: 100%;
     }
 }
+
+// Smaller than tablet
+@media(max-width: 750px)
+{
+    #left-nav-drawer
+    {
+        position: fixed;
+        width: 70%;
+        height: 100%;
+        z-index: 50;
+    }
+    
+    #left-nav-drawer.left-nav-drawer-hidden
+    {
+        display: none;
+    }
+    
+    #left-nav-drawer.left-nav-drawer-shown + #full-page-shadow
+    {
+        display: block !important;
+    }
+}
     
