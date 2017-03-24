@@ -1,0 +1,9 @@
+A responsive theme for Northewst Orthotics and Prosthetics
+
+In progress, doesn't work yet.
+
+Process the scss files with
+
+sass scss/main.scss main.css
+
+from the main directory.
