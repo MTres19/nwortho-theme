@@ -1,0 +1,23 @@
+#carousel-container
+{
+    height: 35rem;
+    padding-top: 5rem;
+    box-sizing: content-box; // Override global to avoid unnecessary image cropping
+    overflow: hidden;
+}
+
+.carousel-panel img
+{
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+}
+
+// Larger than tablet
+@media (min-width: 750px)
+{
+    #carousel-container
+    {
+        padding-left: 20rem; // Make space for navbar
+    }
+}
