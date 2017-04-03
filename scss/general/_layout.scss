@@ -19,5 +19,5 @@
 body
 {
     position: relative; // Make z-index work
-    z-index: -5;
+    z-index: -5; // All content has negative z-index
 }
