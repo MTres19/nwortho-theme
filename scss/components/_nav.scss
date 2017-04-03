@@ -1,5 +1,6 @@
 #left-nav-drawer
 {
+    position: fixed;
     background-color: $shade-black;
     padding-top: 5rem;
     box-shadow: 1rem 0 1rem rgba(0, 0, 0, 0.4);
@@ -67,7 +68,6 @@
     #left-nav-drawer
     {
         display: block;
-        position: fixed;
         width: 20rem;
         height: 100%;
     }
@@ -78,7 +78,6 @@
 {
     #left-nav-drawer
     {
-        position: fixed;
         width: 70%;
         height: 100%;
     }
@@ -87,10 +86,4 @@
     {
         display: none;
     }
-    
-    #left-nav-drawer.left-nav-drawer-shown + #full-page-shadow
-    {
-        display: block !important;
-    }
 }
-    
