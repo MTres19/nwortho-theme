@@ -3,7 +3,7 @@
     display: none;
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
-    z-index: 45;
+    z-index: 0;
     width: 100%;
     height: 100%;
 }
@@ -14,4 +14,10 @@
     {
         padding-left: 20rem;
     }
+}
+
+body
+{
+    position: relative; // Make z-index work
+    z-index: -5;
 }
