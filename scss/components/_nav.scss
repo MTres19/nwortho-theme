@@ -71,6 +71,11 @@
         width: 20rem;
         height: 100%;
     }
+    
+    #nav-drawer-swipe-detector
+    {
+        display: none;
+    }
 }
 
 // Smaller than tablet
@@ -78,12 +83,35 @@
 {
     #left-nav-drawer
     {
-        width: 70%;
+        width: 50%;
         height: 100%;
+        transition: {
+            property: transform;
+            duration: 0.5s;
+            timing-function: linear;
+        }
     }
     
     #left-nav-drawer.left-nav-drawer-hidden
     {
-        display: none;
+        transform: translateX(-100%);
+        box-shadow: none;
+    }
+    
+    #nav-drawer-swipe-detector
+    {
+        width: 1rem;
+        position: fixed;
+        z-index: 110;
+        height: 100%;
+    }
+}
+
+// Smaller than phablet
+@media(max-width: 550px)
+{
+    #left-nav-drawer
+    {
+        width: 70%;
     }
 }
