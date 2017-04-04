@@ -15,11 +15,17 @@
     }
 }
 
+#content-wrapper
+{
+    padding-top: 5rem; // Height of fixed header
+}
+
+// Larger than tablet
 @media (min-width: 750px)
 {
-    .container
+    #content-wrapper
     {
-        padding-left: 20rem;
+        margin-left: 20rem;
     }
 }
 
