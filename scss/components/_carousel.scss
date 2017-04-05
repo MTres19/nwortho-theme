@@ -36,3 +36,22 @@
     transform: translateX(-100%) !important;
     z-index: -14 !important;
 }
+
+#carousel-container > #carousel-advance-button
+{
+    position: absolute;
+    color: $cardboard-grey;
+    left: 50%;
+    transform: translateX(-50%); // Center horizontally
+    top: 90%;
+    cursor: pointer;
+    transition: {
+        property: color;
+        duration: 0.5s;
+    }
+}
+
+#carousel-container > #carousel-advance-button:hover
+{
+    color: $medium-blue-green;
+}

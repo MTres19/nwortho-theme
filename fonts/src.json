@@ -1,19 +1,24 @@
 {
   "metadata": {
     "name": "Northwest Orthotics and Prosthetics",
-    "lastOpened": 1490282226419,
-    "created": 1490282223120
+    "lastOpened": 1488762029609,
+    "created": 1488761996267
   },
   "iconSets": [
     {
       "selection": [
+        {
+          "order": 26,
+          "id": 8,
+          "name": "media-skip-forward"
+        },
         {
           "order": 24,
           "id": 7,
           "name": "im-user",
           "prevSize": 32,
           "code": 59654,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 21,
@@ -21,15 +26,15 @@
           "name": "dialog-information",
           "prevSize": 32,
           "code": 59650,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
-          "order": 25,
+          "order": 15,
           "id": 5,
           "name": "draw-cross",
           "prevSize": 32,
           "code": 59651,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 23,
@@ -37,7 +42,7 @@
           "name": "application-menu",
           "prevSize": 32,
           "code": 59652,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 17,
@@ -45,7 +50,7 @@
           "name": "go-home",
           "prevSize": 32,
           "code": 59653,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 20,
@@ -53,7 +58,7 @@
           "name": "user-group-new",
           "prevSize": 32,
           "code": 59648,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 1,
@@ -72,6 +77,23 @@
       "prevSize": 32,
       "icons": [
         {
+          "id": 8,
+          "paths": [
+            "M512 0.005c-283.646 0-511.995 228.35-511.995 511.995s228.35 511.995 511.995 511.995c283.646 0 511.995-228.35 511.995-511.995s-228.35-511.995-511.995-511.995zM512 64.004c248.189 0 447.996 199.806 447.996 447.996s-199.806 447.996-447.996 447.996c-248.189 0-447.996-199.806-447.996-447.996s199.806-447.996 447.996-447.996zM320.002 320.002v383.996l255.998-191.998-255.998-191.998zM576 512v191.998h127.998v-383.996h-127.998v191.998z"
+          ],
+          "attrs": [
+            {
+              "fill": "rgb(77, 77, 77)"
+            }
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 16,
+          "tags": [
+            "media-skip-forward"
+          ]
+        },
+        {
           "id": 7,
           "paths": [
             "M512 0.005c0 0 0 0 0 0-141.383 0-255.997 114.614-255.997 255.998 0.001 141.384 114.614 255.998 255.997 255.998 0 0 0 0 0 0s0 0 0.001 0c141.383 0 255.997-114.614 255.997-255.998-0.001-141.384-114.614-255.998-255.997-255.998 0 0 0 0 0 0zM512 64.004c106.037 0 191.997 85.96 191.998 191.998-0.001 106.039-85.961 191.998-191.998 191.998s-191.997-85.96-191.998-191.998c0.001-106.039 85.961-191.998 191.998-191.998zM512 576c-259.951 0.318-474.494 194.314-507.097 445.424l64.226 2.571c32.377-218.182 218.251-383.723 442.842-383.996 224.701 0.208 410.641 165.772 442.725 381.547l64.799 2.449c-32.883-253.724-247.493-447.744-507.469-447.996z"
@@ -83,7 +105,7 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 16,
+          "grid": 32,
           "tags": [
             "im-user"
           ]
@@ -98,7 +120,7 @@
               "fill": "rgb(77, 77, 77)"
             }
           ],
-          "grid": 16,
+          "grid": 32,
           "tags": [
             "dialog-information"
           ],
@@ -117,7 +139,7 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 16,
+          "grid": 32,
           "tags": [
             "draw-cross"
           ]
@@ -134,7 +156,7 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 16,
+          "grid": 32,
           "tags": [
             "application-menu"
           ]
@@ -168,7 +190,7 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 16,
+          "grid": 32,
           "tags": [
             "user-group-new"
           ]
@@ -185,7 +207,7 @@
           "name": "nworthotics-logo",
           "prevSize": 32,
           "code": 59649,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 0,
@@ -208,7 +230,7 @@
           "attrs": [],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 16,
+          "grid": 32,
           "tags": [
             "nworthotics logo"
           ],
@@ -219,6 +241,7 @@
       "colorThemes": []
     }
   ],
+  "uid": -1,
   "preferences": {
     "showGlyphs": true,
     "showCodes": true,
@@ -228,7 +251,7 @@
     "fontPref": {
       "prefix": "icm-",
       "metadata": {
-        "fontFamily": "icomoon",
+        "fontFamily": "nworthotics-icons",
         "majorVersion": 1,
         "minorVersion": 0,
         "fontURL": "https://github.com/MTres19/nworthotics-theme",
@@ -247,7 +270,7 @@
       "ie7": false,
       "showMetadata": false,
       "showVersion": true,
-      "cssVars": true,
+      "cssVars": false,
       "cssVarsFormat": "scss"
     },
     "imagePref": {
@@ -263,7 +286,7 @@
     },
     "historySize": 100,
     "gridSize": 16,
-    "showGrid": true
-  },
-  "uid": -1
+    "showGrid": true,
+    "showLiga": false
+  }
 }
