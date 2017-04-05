@@ -6,6 +6,7 @@ function mobileMenuToggle()
 {
     var $fullPageShadow = $('#full-page-shadow');
     var $leftNavDrawer = $('#left-nav-drawer');
+    
     if ($('#header-bar-title').css('display') == 'none') // Mobile only (detect breakpoint)
     {
         $leftNavDrawer.toggleClass('left-nav-drawer-hidden');
@@ -34,11 +35,10 @@ $(document).ready(function() {
     var $toggleButton = $('#header-bar-menu-button');
     var $navDrawerSwipeDetector = $('#nav-drawer-swipe-detector');
     
-    
     // Menu button
     $toggleButton.on('click', mobileMenuToggle);
     
-    // Menu swipe
+    // Menu swipe open. TODO: only swipe right to open
     $navDrawerSwipeDetector.swipe({
         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
             if ($('#left-nav-drawer').hasClass('left-nav-drawer-hidden'))
@@ -48,6 +48,7 @@ $(document).ready(function() {
         }
     });
     
+    // Menu swipe close. TODO: only swipe left to close
     $('#left-nav-drawer').swipe({
         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
             if (!$('#left-nav-drawer').hasClass('left-nav-drawer-hidden'))
@@ -61,8 +62,6 @@ $(document).ready(function() {
     var breakpointDetector = window.matchMedia('(max-width: 750px)');
     breakpointDetector.addListener(function (breakpointDetector) {
         var $leftNavDrawer = $('#left-nav-drawer');
-        
-        console.log("Hello world");
         
         if (fullPageShadowUsers.length = 1
             && fullPageShadowUsers.includes('navdrawer')
