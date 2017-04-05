@@ -3,6 +3,19 @@
     height: 35rem;
     box-sizing: content-box; // Override global to avoid unnecessary image cropping
     overflow: hidden;
+    position: relative;
+}
+
+.carousel-panel
+{
+    transition: {
+        property: transform;
+        duration: 1s;
+        timing-function: linear;
+    }
+    transform: translateX(100%);
+    position: absolute;
+    z-index: -15;
 }
 
 .carousel-panel img
@@ -10,4 +23,15 @@
     width: 100%;
     height: auto;
     box-sizing: content-box;
+}
+
+.carousel-current-panel
+{
+    transform: translateX(0) !important;
+    z-index: -10;
+}
+
+.carousel-previous-panel
+{
+    transform: translateX(-100%) !important;
 }
