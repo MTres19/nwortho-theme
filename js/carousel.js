@@ -45,7 +45,16 @@ function advanceCarousel()
     }
 }
 
+function adjustCarouselContainer()
+{
+    var panelHeight = $('.carousel-panel').height();
+    $('#carousel-container').css('height', panelHeight);
+}
+
 $(document).ready(function() {
+    adjustCarouselContainer();
+    $(window).resize(adjustCarouselContainer);
+    
     var carousel_id = window.setInterval(advanceCarousel, 5000);
     
     $('#carousel-advance-button').on('click', function() {

@@ -1,6 +1,5 @@
 #carousel-container
 {
-    height: 35rem;
     box-sizing: content-box; // Override global to avoid unnecessary image cropping
     overflow: hidden;
     position: relative;
@@ -16,6 +15,7 @@
     transform: translateX(100%);
     position: absolute;
     z-index: -15;
+    max-height: 35rem;
 }
 
 .carousel-panel img
@@ -43,7 +43,7 @@
     color: $cardboard-grey;
     left: 50%;
     transform: translateX(-50%); // Center horizontally
-    top: 90%;
+    bottom: 1rem;
     cursor: pointer;
     transition: {
         property: color;
