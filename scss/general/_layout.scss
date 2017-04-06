@@ -1,3 +1,9 @@
+body
+{
+    position: relative;
+    z-index: 0;
+}
+
 #full-page-shadow
 {
     pointer-events: none;
@@ -15,22 +21,33 @@
     }
 }
 
-#content-wrapper
+
+#header-padding
 {
     padding-top: 5rem; // Height of fixed header
+}
+
+.content-wrapper
+{
+    @extend .light-background;
+    z-index: -45;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px 0px;
 }
 
 // Larger than tablet
 @media (min-width: 750px)
 {
-    #content-wrapper
+    .content-wrapper
     {
         margin-left: 20rem;
     }
 }
 
-body
+.text-wrapper
 {
-    position: relative; // Make z-index work
-    z-index: -5; // All content has negative z-index
+    margin: {
+        left: 0.5rem;
+        right: 0.5rem;
+    }
 }

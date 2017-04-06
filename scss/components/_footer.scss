@@ -1,0 +1,22 @@
+#content-footer
+{
+    //@extend .menu-margin;
+    border: 1rem solid transparent;
+    background-color: $charcoal-grey;
+    color: $cardboard-grey;
+    z-index: -50;
+    position: fixed;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+// Larger than tablet
+@media (min-width: 750px)
+{
+    #content-footer
+    {
+        margin-left: 20rem; // make room for navbar
+    }
+}
