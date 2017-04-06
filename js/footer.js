@@ -7,6 +7,5 @@ function adjustFooter()
 $(document).ready(function() {
     adjustFooter();
     
-    var breakpointDetector = window.matchMedia('(max-width: 750px)');
-    breakpointDetector.addListener(adjustFooter);
+    $(window).resize(adjustFooter);
 });

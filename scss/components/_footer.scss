@@ -6,10 +6,11 @@
     color: $cardboard-grey;
     z-index: -50;
     position: fixed;
-    height: 200px;
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 // Larger than tablet
@@ -19,4 +20,27 @@
     {
         margin-left: 20rem; // make room for navbar
     }
+}
+
+section.footer-link-list
+{
+    margin: 1rem;
+
+}
+
+section.footer-link-list > h1
+{
+    font-size: 1.75rem;
+    text-decoration: {
+        line: underline;
+    }
+}
+
+section.footer-link-list > ul
+{
+    list-style: {
+        type: disc;
+        position: outside;
+    }
+    padding-left: 1.7rem;
 }
