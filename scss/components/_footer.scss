@@ -26,13 +26,13 @@
 section#footer-links
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-shrink: 0;
 }
 
 section.footer-link-list
 {
     margin: 1rem;
-
+    flex-shrink: 0;
 }
 
 section.footer-link-list > h1
@@ -65,6 +65,7 @@ div#footer-logo-container
     color: $warm-light-grey;
     text-align: center;
     flex-shrink: 0;
+    padding: 1rem;
 }
 
 div#footer-logo-container > span
