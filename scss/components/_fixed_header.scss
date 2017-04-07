@@ -8,11 +8,18 @@
 
 .fixed-header-bar
 {
-    min-width: 100%;
+    width: 100%;
     background-color: $medium-blue-green;
     height: 5rem;
     position: fixed;
     z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+#header-bar-items-container
+{
+    width: 100%;
 }
 
 #header-bar-menu-button
@@ -39,11 +46,9 @@
 
     #header-bar-items-container
     {
-        display: inline-flex;
+        display: flex;
         position: relative;
         align-items: center;
-        
-        @include vert-center;
     }
     
     .header-bar-item
@@ -53,6 +58,11 @@
             style: solid;
             color: transparent;
         }
+    }
+    
+    #header-bar-menu-button
+    {
+        display: none;
     }
     
     #header-bar-logo
