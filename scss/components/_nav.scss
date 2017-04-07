@@ -16,9 +16,9 @@
 {
     list-style-type: none;
     margin: 0;
-    padding: {
-        left: 2rem;
-        top: 1rem;
+    margin: {
+        top: 2rem;
+        bottom: 2rem;
     }
     font-size: 1.7rem;
 }
@@ -27,6 +27,23 @@
 {
     display: block;
     color: $cardboard-grey;
+    padding-left: 1.6rem;
+    border-left: {
+        width: 0.4rem;
+        style: solid;
+        color: transparent;
+    }
+    padding: {
+        top: 1rem;
+        bottom: 1rem;
+    }
+    transition-duration: 0.5s;
+}
+
+#left-nav-links-list > li:hover
+{
+    background-color: $charcoal-grey;
+    border-left-color: $icon-grey;
 }
 
 #left-nav-links-list > li::before
