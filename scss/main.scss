@@ -4,6 +4,7 @@
 // Skeleton
 @import "../Skeleton-Sass/scss/skeleton.scss";
 
+// Components
 @import "components/fixed_header";
 @import "components/nav";
 @import "components/main_body";
@@ -14,6 +15,11 @@
 
 // Resources
 @import "fonts/nworthotics-icons/style.css";
+
+// Carousel panels
+@import "carousels/logo";
+@import "carousels/single_photo";
+@import "carousels/collage";
 
 *
 {

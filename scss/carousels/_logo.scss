@@ -1,0 +1,46 @@
+.carousel-panel-logo-wrapper
+{
+    width: 100%;
+    height: 100%;
+    background-color: $dark-navy-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-panel-logo-wrapper > div
+{
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.carousel-panel-logo-wrapper span
+{
+    display: block;
+    color: $cool-light-grey;
+}
+
+.carousel-panel-logo-wrapper .icm-nworthotics-logo
+{
+    font-size: 10rem;
+    margin-right: 3rem;
+}
+
+.carousel-panel-logo-name-container
+{
+    text-align: center;
+}
+
+.carousel-panel-logo-name-container .carousel-panel-logo-nw
+{
+    font-size: 4rem;
+}
+
+.carousel-panel-logo-name-container .carousel-panel-logo-op
+{
+    font-size: 2rem;
+}

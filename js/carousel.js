@@ -47,9 +47,6 @@ function advanceCarousel()
 
 function adjustCarouselPanels()
 {
-    //var panelHeight = $('.carousel-panel').height();
-    //$('#carousel-container').css('height', panelHeight);
-    
     /* Make carousel panels the size of the container
      * because they're absolutely positioned.
      * 
