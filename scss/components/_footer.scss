@@ -1,6 +1,5 @@
 #content-footer
 {
-    //@extend .menu-margin;
     border: 1rem solid transparent;
     background-color: $charcoal-grey;
     color: $cardboard-grey;
@@ -10,7 +9,7 @@
     left: 0;
     right: 0;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
