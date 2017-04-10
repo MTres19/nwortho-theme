@@ -38,9 +38,8 @@ $(document).ready(function() {
     // Menu button
     $toggleButton.on('click', mobileMenuToggle);
     
-    // Menu swipe open. TODO: only swipe right to open
     $navDrawerSwipeDetector.swipe({
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
             if ($('#left-nav-drawer').hasClass('left-nav-drawer-hidden'))
             {
                 mobileMenuToggle();
@@ -48,9 +47,8 @@ $(document).ready(function() {
         }
     });
     
-    // Menu swipe close. TODO: only swipe left to close
     $('#left-nav-drawer').swipe({
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
             if (!$('#left-nav-drawer').hasClass('left-nav-drawer-hidden'))
             {
                 mobileMenuToggle();
