@@ -45,15 +45,41 @@ function advanceCarousel()
     }
 }
 
-function adjustCarouselContainer()
+function adjustCarouselPanels()
 {
-    var panelHeight = $('.carousel-panel').height();
-    $('#carousel-container').css('height', panelHeight);
+    //var panelHeight = $('.carousel-panel').height();
+    //$('#carousel-container').css('height', panelHeight);
+    
+    /* Make carousel panels the size of the container
+     * because they're absolutely positioned.
+     * 
+     * This maintains an 8:5 aspect ratio until the container
+     * reaches 35rem (350px) high, at which point it continues
+     * to grow in width but not height.
+     */
+    $container = $('div#carousel-container')
+    var containerWidth = $container.width();
+    
+    if (containerWidth * 5 / 8 < 350)
+    {
+        $container.css('height', containerWidth * 5 / 8);
+    }
+    else
+    {
+        $container.css('height', '35rem');
+    }
+    
+    // Make panels height and width of container.
+    var $panels = $('div.carousel-panel');
+    $panels.each(function(index) {
+        $panels.eq(index).css('height', $container.height());
+        $panels.eq(index).css('width', containerWidth);
+    });
 }
 
 $(document).ready(function() {
-    adjustCarouselContainer();
-    $(window).resize(adjustCarouselContainer);
+    adjustCarouselPanels();
+    $(window).resize(adjustCarouselPanels);
     
     var carousel_id = window.setInterval(advanceCarousel, 5000);
     
