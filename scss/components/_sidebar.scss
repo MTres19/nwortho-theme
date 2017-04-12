@@ -1,0 +1,101 @@
+div#right-sidebar-wrapper
+{
+    /* Thanks to http://stackoverflow.com/a/11833892/
+     * 
+     * On desktops or larger, this div will have absolute
+     * positioning, allowing it to be placed relative to its
+     * container. The sidebar it contains will then have a fixed
+     * position yet remain positioned in the same place as this element.
+     * On smaller devices, it will switch to static positioning,
+     * as will the menu, allowing it to display a normal menu that
+     * does not remain on the screen when scrolling.
+     */
+}
+
+aside#right-sidebar
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+// Larger than desktop
+@media (min-width: 1000px)
+{
+    div#right-sidebar-wrapper
+    {
+        position: absolute;
+        top: 2rem;
+    }
+    
+    aside#right-sidebar
+    {
+        position: fixed;
+        right: 2rem;
+        width: 20rem;
+        padding: 1rem;
+        
+        box-shadow: 0 0 1.2rem 0.65rem rgba(0, 0, 0, 0.4);
+        background-color: $shade-black;
+        color: $cardboard-grey;
+    }
+}
+
+// Smaller than desktop
+@media (max-width: 1000px)
+{
+    div#right-sidebar-wrapper
+    {
+        text-align: center;
+    }
+    
+    aside#right-sidebar
+    {
+        display: inline-block;
+        position: relative;
+        border: {
+            color: $shade-black;
+            style: solid;
+            width: 0.2rem;
+        }
+        
+        margin: {
+            top: 2rem;
+            bottom: 2rem;
+        }
+        text-align: left;
+    }
+}
+
+aside#right-sidebar h1
+{
+    font-size: 2.3rem;
+    text-decoration-line: underline;
+    margin: {
+        top: 0;
+        bottom: 0.9rem;
+        left: 0;
+        right: 0;
+    }
+    text-align: center;
+}
+
+aside#right-sidebar > ul
+{
+    display: flex;
+    flex-direction: column;
+}
+
+aside#right-sidebar li
+{
+    list-style-type: none;
+    margin: {
+        top: 0.12rem;
+        bottom: 0.12rem;
+    }
+}
+
+aside#right-sidebar li > span
+{
+    padding-right: 1rem;
+}

@@ -44,10 +44,37 @@ body
     }
 }
 
-.text-wrapper
+.text-wrapper-static
 {
     margin: {
-        left: 0.5rem;
-        right: 0.5rem;
+        left: 2rem;
+        right: 2rem;
+    }
+}
+
+.text-wrapper-blog
+{
+    margin: {
+        left: 2rem;
+    }
+    
+    position: relative; // Needed to allow positioning of right sidebar
+}
+
+// Larger than desktop
+@media (min-width: 1000px)
+{
+    .text-wrapper-blog
+    {
+        margin-right: 24rem;
+    }
+}
+
+// Smaller than desktop
+@media (max-width: 1000px)
+{
+    .text-wrapper-blog
+    {
+        margin-right: 2rem;
     }
 }
