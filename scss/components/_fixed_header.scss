@@ -20,6 +20,13 @@
 #header-bar-items-container
 {
     width: 100%;
+    color: $shade-black;
+}
+
+#header-bar-items-container *
+{
+    color: inherit;
+    text-decoration: none;
 }
 
 #header-bar-menu-button
