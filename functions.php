@@ -4,8 +4,46 @@ function register_nwortho_menus()
 {
     register_nav_menus(
         array(
-            'footer-menu' => __('Footer Menu')
+            'footer-menu-left' => 'Left/top footer menu',
+            'footer-menu-middle' => 'Middle footer menu',
+            'footer-menu-right' => 'Right/bottom footer menu',
+            'left-nav-menu' => 'Left Navigation Drawer'
         )
     );
 }
 add_action('init', 'register_nwortho_menus');
+
+
+function fallback_left_menu()
+{
+    wp_page_menu(
+        array(
+            'menu_class' => '',
+            'container' => false,
+        )
+    );
+    }
+
+
+// Make sure users can edit the "Posts page" since this theme displays that page's content at the top
+// Thanks https://robincornett.com/posts-page/
+function allow_posts_page_to_be_edited($post)
+{
+    if ($post->ID = get_option('page_for_posts'))
+    {
+        add_post_type_support('page', 'editor');
+    }
+}
+add_action('edit_form_after_title', 'allow_posts_page_to_be_edited');
+
+// Thanks to https://wordpress.stackexchange.com/a/45708
+function _nw_get_menu_by_location($location) {
+    if( empty($location) ) return false;
+
+    $locations = get_nav_menu_locations();
+    if( ! isset( $locations[$location] ) ) return false;
+
+    $menu_obj = get_term( $locations[$location], 'nav_menu' );
+
+    return $menu_obj;
+}

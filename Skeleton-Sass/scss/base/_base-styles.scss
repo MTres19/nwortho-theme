@@ -28,6 +28,8 @@ a {
   &:hover {
     color: darken($plasma-blue, 5%);
   }
+  
+  text-decoration: none;
 }
 
 // Misc

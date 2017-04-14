@@ -3,27 +3,52 @@
   <footer id="content-footer">
     <section id="footer-links">
       <section class="footer-link-list">
-        <h1>For Patients</h1>
-        <ul>
-          <li><a>Products</a></li>
-          <li><a>Services</a></li>
-          <li><a>Location</a></li>
-        </ul>
+        <?php 
+            $footer_first_menu = _nw_get_menu_by_location('footer-menu-left');
+            echo "<h1>{$footer_first_menu->name}</h1>";
+            wp_nav_menu(
+                array(
+                    'menu' => $footer_first_menu,
+                    'menu_class' => '',
+                    'menu_id' => '',
+                    'container' => false,
+                    'container_class' => false,
+                    'fallback_cb' => false
+                )
+            );
+        ?>
       </section>
       <section class="footer-link-list">
-        <h1>For Physicians</h1>
-        <ul>
-          <li><a>Partnership</a></li>
-          <li><a>Business cards</a></li>
-        </ul>
+        <?php 
+            $footer_second_menu = _nw_get_menu_by_location('footer-menu-middle');
+            echo "<h1>{$footer_second_menu->name}</h1>";
+            wp_nav_menu(
+                array(
+                    'menu' => $footer_second_menu,
+                    'menu_class' => '',
+                    'menu_id' => '',
+                    'container' => false,
+                    'container_class' => false,
+                    'fallback_cb' => false
+                )
+            );
+        ?>
       </section>
       <section class="footer-link-list">
-        <h1>About</h1>
-        <ul>
-          <li><a>The business</a></li>
-          <li><a>Legal</a></li>
-          <li><a>This website</a></li>
-        </ul>
+        <?php 
+            $footer_third_menu = _nw_get_menu_by_location('footer-menu-right');
+            echo "<h1>{$footer_third_menu->name}</h1>";
+            wp_nav_menu(
+                array(
+                    'menu' => $footer_third_menu,
+                    'menu_class' => '',
+                    'menu_id' => '',
+                    'container' => false,
+                    'container_class' => false,
+                    'fallback_cb' => false
+                )
+            );
+        ?>
       </section>
     </section>
     <div id="footer-logo-container">
