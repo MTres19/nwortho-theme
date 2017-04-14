@@ -44,6 +44,8 @@ get_template_part('nav');
                     get_template_part('template-parts/content-post-summary', get_post_format());
                 }
             }
+            
+            get_template_part('template-parts/floating_sidebar');
         ?>
     </div>
   </div> <!-- End content-wrapper --> 

@@ -12,7 +12,7 @@ div#right-sidebar-wrapper
      */
 }
 
-aside#right-sidebar
+nav#right-sidebar
 {
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ aside#right-sidebar
         top: 2rem;
     }
     
-    aside#right-sidebar
+    nav#right-sidebar
     {
         position: fixed;
         right: 2rem;
@@ -49,7 +49,7 @@ aside#right-sidebar
         text-align: center;
     }
     
-    aside#right-sidebar
+    nav#right-sidebar
     {
         display: inline-block;
         position: relative;
@@ -67,7 +67,7 @@ aside#right-sidebar
     }
 }
 
-aside#right-sidebar h1
+nav#right-sidebar h1
 {
     font-size: 2.3rem;
     text-decoration-line: underline;
@@ -80,13 +80,13 @@ aside#right-sidebar h1
     text-align: center;
 }
 
-aside#right-sidebar > ul
+nav#right-sidebar > ul
 {
     display: flex;
     flex-direction: column;
 }
 
-aside#right-sidebar li
+nav#right-sidebar li
 {
     list-style-type: none;
     margin: {
@@ -95,7 +95,12 @@ aside#right-sidebar li
     }
 }
 
-aside#right-sidebar li > span
+nav#right-sidebar li > span
 {
     padding-right: 1rem;
+}
+
+nav#right-sidebar li > a, nav#right-sidebar li > a:hover
+{
+    color: $cardboard-grey;
 }
