@@ -40,48 +40,21 @@
     transition-duration: 0.5s;
 }
 
+#left-nav-links-list > li > a > span::before
+{
+    padding-right: 1rem;
+}
+
 #left-nav-links-list > li:hover
 {
     background-color: $charcoal-grey;
     border-left-color: $icon-grey;
 }
 
-#left-nav-links-list > li::before
+#left-nav-links-list > li > a
 {
-    font-family: 'nworthotics-icons' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    
-    
-    padding-right: 1rem;
-}
-
-#left-nav-link-home::before
-{
-    content: "\e905";
-}
-
-#left-nav-link-about::before
-{
-    content: "\e902";
-}
-
-#left-nav-link-services::before
-{
-    content: "\e901";
-}
-
-#left-nav-link-team::before
-{
-    content: "\e900";
+    color: inherit;
+    text-decoration: none;
 }
 
 // Larger than tablet

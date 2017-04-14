@@ -8,29 +8,52 @@
     {
       "selection": [
         {
+          "order": 31,
+          "id": 13,
+          "name": "news-subscribe",
+          "prevSize": 32,
+          "code": 59660,
+          "tempChar": ""
+        },
+        {
           "order": 30,
           "id": 12,
-          "name": "feed-subscribe"
+          "name": "feed-subscribe",
+          "prevSize": 32,
+          "code": 59655,
+          "tempChar": ""
         },
         {
           "order": 29,
           "id": 11,
-          "name": "document-preview-archive"
+          "name": "document-preview-archive",
+          "prevSize": 32,
+          "code": 59656,
+          "tempChar": ""
         },
         {
           "order": 28,
           "id": 10,
-          "name": "document-open-folder"
+          "name": "document-open-folder",
+          "prevSize": 32,
+          "code": 59657,
+          "tempChar": ""
         },
         {
           "order": 27,
           "id": 9,
-          "name": "system-switch-user"
+          "name": "system-switch-user",
+          "prevSize": 32,
+          "code": 59658,
+          "tempChar": ""
         },
         {
           "order": 26,
           "id": 8,
-          "name": "media-skip-forward"
+          "name": "media-skip-forward",
+          "prevSize": 32,
+          "code": 59659,
+          "tempChar": ""
         },
         {
           "order": 24,
@@ -38,7 +61,7 @@
           "name": "im-user",
           "prevSize": 32,
           "code": 59654,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 21,
@@ -46,7 +69,7 @@
           "name": "dialog-information",
           "prevSize": 32,
           "code": 59650,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 15,
@@ -54,7 +77,7 @@
           "name": "draw-cross",
           "prevSize": 32,
           "code": 59651,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 23,
@@ -62,7 +85,7 @@
           "name": "application-menu",
           "prevSize": 32,
           "code": 59652,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 17,
@@ -70,7 +93,7 @@
           "name": "go-home",
           "prevSize": 32,
           "code": 59653,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 20,
@@ -78,7 +101,7 @@
           "name": "user-group-new",
           "prevSize": 32,
           "code": 59648,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 1,
@@ -96,6 +119,23 @@
       "height": 1024,
       "prevSize": 32,
       "icons": [
+        {
+          "id": 13,
+          "paths": [
+            "M64.011 0.013v127.996h-63.999v895.977h1023.975v-895.977h-63.999v-127.996h-895.977zM128.010 64.011h767.981v63.999h-767.981v-63.999zM64.011 192.009h895.977v767.981h-895.977v-767.981zM128.010 256.006v255.994h255.994v-255.994h-255.994zM512 256.006v63.999h383.99v-63.999h-383.99zM512 448.001v63.999h383.99v-63.999h-383.99zM128.010 575.999v319.991h767.981v-319.991h-767.981z"
+          ],
+          "attrs": [
+            {
+              "fill": "rgb(77, 77, 77)"
+            }
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 16,
+          "tags": [
+            "news-subscribe"
+          ]
+        },
         {
           "id": 12,
           "paths": [
@@ -295,7 +335,7 @@
           "name": "nworthotics-logo",
           "prevSize": 32,
           "code": 59649,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 0,

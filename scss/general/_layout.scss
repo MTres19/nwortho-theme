@@ -56,6 +56,7 @@ body
 {
     margin: {
         left: 2rem;
+        top: 2rem;
     }
     
     position: relative; // Needed to allow positioning of right sidebar
@@ -77,4 +78,26 @@ body
     {
         margin-right: 2rem;
     }
+}
+
+#blog-page-info-wrapper
+{
+    max-width: 60rem;
+}
+
+.text-wrapper-blog > #blog-page-info-wrapper > h1
+{
+    text-align: center;
+}
+
+h3#recent-blog-posts-header
+{
+    border-bottom:
+    {
+        style: solid;
+        width: 1px;
+        color: $charcoal-grey;
+    }
+    
+    font-size: 3rem;
 }

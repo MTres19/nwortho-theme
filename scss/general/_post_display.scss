@@ -1,0 +1,38 @@
+div.blog-summary-container
+{
+    border-left: {
+        width: 1px;
+        color: $charcoal-grey;
+        style: solid;
+    }
+    padding-left: 2rem;
+    margin-bottom: 5rem;
+}
+
+div.blog-summary-container > *
+{
+    margin: 0;
+}
+
+p.blog-summary-post-date
+{
+    font-weight: bold;
+    font-size: 1rem;
+    font-color: $charcoal-grey;
+}
+
+div.blog-summary-container > h3
+{
+    font-size: 2rem;
+}
+
+div.blog-summary-container > h4
+{
+    font-style: italic;
+    font-size: 1rem;
+}
+
+div.blog-summary-container > blockquote
+{
+    margin-top: 1rem;
+}
