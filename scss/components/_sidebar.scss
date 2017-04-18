@@ -39,6 +39,11 @@ nav#right-sidebar
         background-color: $shade-black;
         color: $cardboard-grey;
     }
+    
+    nav#right-sidebar li > a, nav#right-sidebar li > a:hover
+    {
+        color: $cardboard-grey;
+    }
 }
 
 // Smaller than desktop
@@ -64,6 +69,11 @@ nav#right-sidebar
             bottom: 2rem;
         }
         text-align: left;
+    }
+    
+    nav#right-sidebar li > a, nav#right-sidebar li > a:hover
+    {
+        color: $shade-black;
     }
 }
 
@@ -100,7 +110,4 @@ nav#right-sidebar li > span
     padding-right: 1rem;
 }
 
-nav#right-sidebar li > a, nav#right-sidebar li > a:hover
-{
-    color: $cardboard-grey;
-}
+

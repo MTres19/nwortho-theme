@@ -26,26 +26,9 @@
 #left-nav-links-list > li
 {
     display: block;
-    color: $cardboard-grey;
-    padding-left: 1.6rem;
-    border-left: {
-        width: 0.4rem;
-        style: solid;
-        color: transparent;
-    }
-    padding: {
-        top: 1rem;
-        bottom: 1rem;
-    }
-    transition-duration: 0.5s;
 }
 
-#left-nav-links-list > li > a > span::before
-{
-    padding-right: 1rem;
-}
-
-#left-nav-links-list > li:hover
+#left-nav-links-list > li > a:hover
 {
     background-color: $charcoal-grey;
     border-left-color: $icon-grey;
@@ -53,8 +36,28 @@
 
 #left-nav-links-list > li > a
 {
-    color: inherit;
+    display: block;
+    color: $cardboard-grey;
     text-decoration: none;
+    
+    padding: {
+        top: 1rem;
+        bottom: 1rem;
+        left: 1.6rem;
+    }
+    
+    border-left: {
+        width: 0.4rem;
+        style: solid;
+        color: transparent;
+    }
+    
+    transition-duration: 0.5s;
+}
+
+#left-nav-links-list > li > a > span::before
+{
+    padding-right: 1rem;
 }
 
 // Larger than tablet
