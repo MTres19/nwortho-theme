@@ -12,9 +12,16 @@ $(document).ready(function() {
     $separators.before('<div class="container"></div>');
     
     var $containers = $('div.text-wrapper-static-home > .container');
-    $containers.append('<div class="row"></div>');
     
-    $.each(separator_predecessors, function(index, elements) {
-        $containers.eq(index).children('.row').append(elements);
+    $.each(separator_predecessors, function(index, $elements) {
+        var numRows = $elements.length / 2;
+        $containers.eq(index).append('<div class="row"></div>'.repeat(numRows));
+        
+        var $rows = $containers.eq(index).children('.row');
+        
+        $elements.each(function(index, element) {
+            var $row = $rows.eq(Math.floor(index / 2));
+            $row.append(element);
+        });
     });
 });

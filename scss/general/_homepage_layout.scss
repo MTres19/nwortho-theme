@@ -1,11 +1,18 @@
 .wp-caption
 {
-    @extend .three;
+    @extend .six;
     @extend .columns;
+    display: flex;
+    align-items: center;
+    margin: {
+        bottom: 2rem;
+    }
 }
 
 .wp-caption > img
 {
-    width: 100%; // Override inline
+    max-width: 50%;
+    flex-grow: 0;
     height: auto;
+    margin-right: 1rem;
 }

@@ -31,3 +31,4 @@
   <script src="<?php bloginfo('template_directory');?>/js/nav.js"></script>
   <script src="<?php bloginfo('template_directory');?>/js/carousel.js"></script>
   <script src="<?php bloginfo('template_directory');?>/js/footer.js"></script>
+  <script src="<?php bloginfo('template_directory');?>/js/polyfills.js"></script>

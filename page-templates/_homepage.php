@@ -2,7 +2,7 @@
 <?php
 
 get_header('home');
-get_template_part('nav');
+get_template_part('template-parts/nav');
 ?>
   <div id="header-padding"></div>
   

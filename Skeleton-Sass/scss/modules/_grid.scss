@@ -32,8 +32,8 @@
   }
 }
 
-// For devices larger than 550px
-@media (#{$bp-larger-than-phablet}) {
+// For devices larger than 1000px
+@media (#{$bp-larger-than-desktop}) {
   .container {
     //width: $container-width-larger-than-phablet;
   }
