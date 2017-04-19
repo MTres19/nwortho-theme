@@ -1,3 +1,5 @@
+// Moves WordPress content into Skeleton grids separated by horizontal rules (hr)
+
 $(document).ready(function() {
     var $separators = $('div.text-wrapper-static-home > hr');
     
@@ -13,8 +15,6 @@ $(document).ready(function() {
     $containers.append('<div class="row"></div>');
     
     $.each(separator_predecessors, function(index, elements) {
-        console.log(elements);
         $containers.eq(index).children('.row').append(elements);
-        //elements.remove();
     });
 });
