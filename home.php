@@ -2,7 +2,7 @@
 // Displays the blog page
 
 get_header();
-get_template_part('nav');
+get_template_part('template-parts/nav');
 ?>
   <div id="header-padding"></div>
   

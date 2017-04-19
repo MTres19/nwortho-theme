@@ -1,7 +1,7 @@
 <?php
 
 get_header();
-get_template_part('nav');
+get_template_part('template_parts/nav');
 ?>
   <div id="header-padding"></div>
   

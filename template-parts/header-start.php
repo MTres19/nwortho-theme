@@ -24,7 +24,7 @@
   <!-- jQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.js"></script>
-  <script src="<?php bloginfo('template_directory');?>/touchswipe.js"></script>
+  <script src="<?php bloginfo('template_directory');?>/js/touchswipe.js"></script>
   
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
