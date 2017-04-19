@@ -1,0 +1,11 @@
+.wp-caption
+{
+    @extend .three;
+    @extend .columns;
+}
+
+.wp-caption > img
+{
+    width: 100%; // Override inline
+    height: auto;
+}
