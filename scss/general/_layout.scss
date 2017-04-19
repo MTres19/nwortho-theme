@@ -47,9 +47,12 @@ body
 .text-wrapper-static
 {
     margin: {
+        top: 2rem;
         left: 2rem;
         right: 2rem;
     }
+    padding-bottom: 2rem;
+    
 }
 
 .text-wrapper-blog
@@ -58,6 +61,7 @@ body
         left: 2rem;
         top: 2rem;
     }
+    padding-bottom: 2rem;
     
     position: relative; // Needed to allow positioning of right sidebar
 }
