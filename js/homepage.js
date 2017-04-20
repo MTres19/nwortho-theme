@@ -6,7 +6,7 @@ $(document).ready(function() {
     var separator_predecessors = [];
     
     $separators.each(function(index, element) {
-        separator_predecessors[index] = $(this).prevUntil('hr');
+        separator_predecessors[index] = $(this).prevUntil('hr', '.wp-caption');
     });
     
     $separators.before('<div class="container"></div>');
