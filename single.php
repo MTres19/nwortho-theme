@@ -25,3 +25,4 @@ get_template_part('template-parts/nav');
 get_footer();
 
 ?>
+ 

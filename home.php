@@ -25,8 +25,6 @@ get_template_part('template-parts/nav');
                 echo '</div>';
                 
                 
-                ?><h3 id="recent-blog-posts-header">Recent Blog Posts</h3><?php
-                
                 // List of blog summaries
                 $post_list_query = new WP_Query(array('post_type' => 'post'));
                 while ($post_list_query->have_posts())
@@ -45,6 +43,7 @@ get_template_part('template-parts/nav');
                 }
             }
             
+            the_posts_pagination();
             get_template_part('template-parts/floating_sidebar');
         ?>
     </div>

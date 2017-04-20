@@ -1,4 +1,11 @@
-div.blog-summary-container
+// BEGIN post list formatting ---------------------------
+
+.text-wrapper-blog > #blog-page-info-wrapper > h1
+{
+    text-align: center;
+}
+
+blockquote.blog-summary-container
 {
     border-left: {
         width: 1px;
@@ -9,7 +16,7 @@ div.blog-summary-container
     margin-bottom: 5rem;
 }
 
-div.blog-summary-container > *
+blockquote.blog-summary-container > *
 {
     margin: 0;
 }
@@ -21,18 +28,58 @@ p.blog-summary-post-date
     font-color: $charcoal-grey;
 }
 
-div.blog-summary-container > h3
+blockquote.blog-summary-container > h3
 {
     font-size: 2rem;
 }
 
-div.blog-summary-container > h4
+blockquote.blog-summary-container > h3 > a
+{
+    color: $shade-black;
+}
+
+blockquote.blog-summary-container > h3 > a:hover
+{
+    color: $shade-black;
+    text-decoration: underline;
+}
+
+blockquote.blog-summary-container > h4
 {
     font-style: italic;
     font-size: 1rem;
 }
 
-div.blog-summary-container > blockquote
+blockquote.blog-summary-container > div.blog-summary-excerpt
 {
     margin-top: 1rem;
 }
+
+blockquote.blog-summary-container > div.blog-summary-excerpt > img.wp-post-image
+{
+    float: left;
+    margin: {
+        right: 1rem;
+        bottom: 1rem;
+    }
+}
+
+// END post list formatting
+
+// BEGIN single post formatting
+article.blog-article > h1.blog-post-title
+{
+    margin: 0;
+    font-size: 3rem;
+}
+
+article.blog-article > p.blog-post-info
+{
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $charcoal-grey;
+    font-style: italic;
+    color: $charcoal-grey;
+}
+
+
+// END single post formatting

@@ -33,6 +33,7 @@ body
     z-index: -45;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 10px 0px;
+    min-height: 100vh; // Make sure footer is obscured
 }
 
 // Larger than tablet
@@ -72,6 +73,7 @@ body
     .text-wrapper-blog
     {
         margin-right: 24rem;
+        max-width: 50rem;
     }
 }
 
@@ -82,26 +84,4 @@ body
     {
         margin-right: 2rem;
     }
-}
-
-#blog-page-info-wrapper
-{
-    max-width: 60rem;
-}
-
-.text-wrapper-blog > #blog-page-info-wrapper > h1
-{
-    text-align: center;
-}
-
-h3#recent-blog-posts-header
-{
-    border-bottom:
-    {
-        style: solid;
-        width: 1px;
-        color: $charcoal-grey;
-    }
-    
-    font-size: 3rem;
 }

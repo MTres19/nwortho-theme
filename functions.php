@@ -22,8 +22,9 @@ function fallback_left_menu()
             'container' => false,
         )
     );
-    }
+}
 
+add_theme_support('post-thumbnails', array('post'));
 
 // Make sure users can edit the "Posts page" since this theme displays that page's content at the top
 // Thanks https://robincornett.com/posts-page/

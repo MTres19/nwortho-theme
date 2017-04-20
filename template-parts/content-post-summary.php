@@ -1,6 +1,11 @@
-<div class="blog-summary-container">
+<blockquote class="blog-summary-container">
     <p class="blog-summary-post-date"><?php the_date(); ?></p>
-    <h3><?php the_title(); ?></h3>
+    <h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
     <h4>by <?php the_author(); ?></h4>
-    <blockquote><?php the_excerpt(); ?></blockquote>
-</div>
+    <div class="blog-summary-excerpt">
+        <?php
+            the_post_thumbnail('thumbnail');
+            the_excerpt();
+        ?>
+    </div>
+</blockquote>
