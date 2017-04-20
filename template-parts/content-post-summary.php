@@ -7,5 +7,7 @@
             the_post_thumbnail('thumbnail');
             the_excerpt();
         ?>
+        
+        <a class="read-more-link" href="<?php the_permalink();?>">Read more…</a>
     </div>
 </blockquote>

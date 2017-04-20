@@ -64,9 +64,24 @@ blockquote.blog-summary-container > div.blog-summary-excerpt > img.wp-post-image
     }
 }
 
+blockquote.blog-summary-container > div.blog-summary-excerpt > p
+{
+    margin-bottom: 0;
+}
+
+blockquote.blog-summary-container a.read-more-link
+{
+    font-style: italic;
+}
+
 // END post list formatting
 
 // BEGIN single post formatting
+article.blog-article
+{
+    border-bottom: 1px solid $cool-medium-grey;
+}
+
 article.blog-article > h1.blog-post-title
 {
     margin: 0;
@@ -83,3 +98,59 @@ article.blog-article > p.blog-post-info
 
 
 // END single post formatting
+
+// BEGIN comments formatting
+.comments-container
+{
+    margin-top: 2rem;
+}
+
+h2.comments-title
+{
+    font-size: 2rem;
+}
+
+.comments-container p.comments-closed
+{
+    font-style: italic;
+}
+
+ol.comment-list li
+{
+    list-style-type: none;
+    margin-left: 75px; // Make room for avatar
+}
+
+.comment-author.vcard
+{
+    img.avatar
+    {
+        position: absolute;
+        left: 0;
+    }
+    
+    span.says
+    {
+        display: none;
+    }
+}
+
+.comment-metadata
+{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.comment-metadata > a, .comment-metadata > a:hover
+{
+    color: $shade-black;
+}
+
+.comment-metadata > a:hover::after
+{
+    content: '#';
+    color: $plasma-blue;
+}
+
+
+// END comments formatting

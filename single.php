@@ -17,6 +17,8 @@ get_template_part('template-parts/nav');
                 }
             }
             
+            comments_template();
+            
             get_template_part('template-parts/floating_sidebar');
         ?>
       </div>
