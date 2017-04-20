@@ -23,24 +23,13 @@ get_template_part('template-parts/nav');
                 echo "<h1>{$posts_page->post_title}</h1>";
                 echo "<p>{$posts_page->post_content}</p>";
                 echo '</div>';
-                
-                
-                // List of blog summaries
-                $post_list_query = new WP_Query(array('post_type' => 'post'));
-                while ($post_list_query->have_posts())
-                {
-                    $post_list_query->the_post();
-                    get_template_part('template-parts/content-post-summary', get_post_format());
-                }
-                wp_reset_postdata();
             }
-            elseif (have_posts() && is_home() && is_front_page()) // List of posts on homepage
+                
+            // List of blog summaries
+            while (have_posts())
             {
-                while (have_posts())
-                {
-                    the_post();
-                    get_template_part('template-parts/content-post-summary', get_post_format());
-                }
+                the_post();
+                get_template_part('template-parts/content-post-summary', get_post_format());
             }
             
             the_posts_pagination();
