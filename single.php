@@ -17,6 +17,8 @@ get_template_part('template-parts/nav');
                 }
             }
             
+            ?><hr class="comments-separator" /><?php
+            
             comments_template();
             
             get_template_part('template-parts/floating_sidebar');

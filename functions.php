@@ -27,6 +27,17 @@ function fallback_left_menu()
 add_theme_support('post-thumbnails', array('post'));
 add_theme_support('html5');
 
+
+// From https://peterwilson.cc/including-wordpress-comment-reply-js/
+function theme_queue_js()
+{
+    if (is_singular() && comments_open() && get_option('thread_comments'))
+    {
+        wp_enqueue_script( 'comment-reply' );
+    }
+}
+add_action('wp_print_scripts', 'theme_queue_js');
+
 // Make sure users can edit the "Posts page" since this theme displays that page's content at the top
 // Thanks https://robincornett.com/posts-page/
 function allow_posts_page_to_be_edited($post)

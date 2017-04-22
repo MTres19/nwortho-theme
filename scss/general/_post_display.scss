@@ -77,10 +77,6 @@ blockquote.blog-summary-container a.read-more-link
 // END post list formatting
 
 // BEGIN single post formatting
-article.blog-article
-{
-    border-bottom: 1px solid $cool-medium-grey;
-}
 
 article.blog-article > h1.blog-post-title
 {
@@ -91,11 +87,17 @@ article.blog-article > h1.blog-post-title
 article.blog-article > p.blog-post-info
 {
     margin-bottom: 1rem;
-    border-bottom: 1px solid $charcoal-grey;
     font-style: italic;
     color: $charcoal-grey;
 }
 
+hr.comments-separator
+{
+    margin: 0;
+    height: 1px;
+    background-color: $cool-medium-grey;
+    border: none;
+}
 
 // END single post formatting
 
@@ -118,20 +120,39 @@ h2.comments-title
 ol.comment-list li
 {
     list-style-type: none;
-    margin-left: 75px; // Make room for avatar
+    margin-bottom: 1rem;
+    margin-left: 40px; // Make room for avatar (spacing shared with article)
+}
+
+article.comment-body
+{
+    font-family: inherit;
+    margin-left: 45px; // Make room for avatar (spacing shared with li)
 }
 
 .comment-author.vcard
 {
+    position: relative; // Position avatars relative to this
+    
     img.avatar
     {
         position: absolute;
-        left: 0;
+        left: -85px;
     }
     
     span.says
     {
         display: none;
+    }
+    
+    b.fn > a
+    {
+        color: $shade-black;
+    }
+    
+    b.fn > a:hover
+    {
+        text-decoration: underline;
     }
 }
 
@@ -152,5 +173,101 @@ ol.comment-list li
     color: $plasma-blue;
 }
 
+div.comment-content > p:last-child
+{
+    margin-bottom: 1.5rem;
+}
+
+div.reply
+{
+    a.comment-reply-link
+    {
+        position: relative;
+    }
+    
+    *
+    {
+        color: $shade-black;
+        font-weight: bold;
+    }
+    
+    a.comment-reply-link > span.icm-edit-undo
+    {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(-100%);
+    }
+}
+
+div.reply > a:hover
+{
+    border-bottom: 1px solid $shade-black; // arrow icon looks horrible with underline
+}
+
+li.comment > ol.children
+{
+    margin: {
+        left: 0;
+    }
+    padding-left: 1rem;
+    border-left: 1px solid $shade-black;
+    
+    li.comment
+    {
+        padding-top: 1rem;
+    }
+    
+    .comment-author.vcard > img.avatar
+    {
+        width: 60px;
+        height: 60px;
+        left: -70px;
+    }
+}
 
 // END comments formatting
+
+// BEGIN reply form formatting
+div.comment-respond
+{
+    margin-top: 5rem;
+    
+    form.comment-form
+    {
+        textarea, input
+        {
+            width: 100%;
+        }
+    }
+}
+
+div.comment-respond > h3.comment-reply-title
+{
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+    
+    a
+    {
+        color: $shade-black;
+    }
+    a:hover
+    {
+        text-decoration: underline;
+    }
+}
+
+div.comment-respond > form
+{
+    p.logged-in-as > a
+    {
+        color: $shade-black;
+    }
+    
+    p.logged-in-as > a:last-child
+    {
+        font-weight: bold;
+    }
+}
+
+// END reply form formatting
