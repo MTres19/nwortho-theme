@@ -66,7 +66,11 @@ add_action('widgets_init', function()
     {
         register_sidebar(array(
             'id' => 'blog',
-            'name' => 'Blog right/bottom widget area',
+            'name' => 'Right/bottom widget area (blog only)'
+        ));
+        register_sidebar(array(
+            'id' => 'global',
+            'name' => 'Bottom widget area (all pages)'
         ));
     }
 );

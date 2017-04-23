@@ -16,6 +16,8 @@ get_template_part('template-parts/nav');
                     get_template_part('template-parts/content-page', get_post_format());
                 }
             }
+            
+            get_sidebar('global');
         ?>
     </div>
   </div> <!-- End content-wrapper --> 

@@ -18,6 +18,8 @@ get_template_part('template-parts/nav');
                     the_content();
                 }
             }
+            
+            get_sidebar('global');
         ?>
     </div>
   </div> <!-- End content-wrapper --> 

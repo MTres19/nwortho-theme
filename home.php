@@ -34,6 +34,7 @@ get_template_part('template-parts/nav');
             
             the_posts_pagination();
             get_sidebar('blog');
+            get_sidebar('global');
         ?>
     </div>
   </div> <!-- End content-wrapper --> 

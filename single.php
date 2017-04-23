@@ -22,6 +22,7 @@ get_template_part('template-parts/nav');
             comments_template();
             
             get_sidebar('blog');
+            get_sidebar('global');
         ?>
       </div>
     </div> <!-- End content-wrapper --> 
