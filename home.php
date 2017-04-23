@@ -33,7 +33,7 @@ get_template_part('template-parts/nav');
             }
             
             the_posts_pagination();
-            get_template_part('template-parts/floating_sidebar');
+            get_sidebar('blog');
         ?>
     </div>
   </div> <!-- End content-wrapper --> 

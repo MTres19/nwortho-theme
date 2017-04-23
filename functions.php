@@ -60,3 +60,13 @@ function _nw_get_menu_by_location($location) {
 
     return $menu_obj;
 }
+
+
+add_action('widgets_init', function()
+    {
+        register_sidebar(array(
+            'id' => 'blog',
+            'name' => 'Blog right/bottom widget area',
+        ));
+    }
+);

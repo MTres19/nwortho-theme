@@ -21,7 +21,7 @@ get_template_part('template-parts/nav');
             
             comments_template();
             
-            get_template_part('template-parts/floating_sidebar');
+            get_sidebar('blog');
         ?>
       </div>
     </div> <!-- End content-wrapper --> 

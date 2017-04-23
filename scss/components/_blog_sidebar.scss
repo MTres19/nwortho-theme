@@ -12,11 +12,11 @@ div#right-sidebar-wrapper
      */
 }
 
-nav#right-sidebar
+div#right-sidebar
 {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 // Larger than desktop
@@ -28,21 +28,52 @@ nav#right-sidebar
         top: 2rem;
     }
     
-    nav#right-sidebar
+    div#right-sidebar
     {
         position: fixed;
         right: 2rem;
-        width: 20rem;
-        padding: 1rem;
+        width: 30rem;
         
         box-shadow: 0 0 1.2rem 0.65rem rgba(0, 0, 0, 0.4);
         background-color: $shade-black;
         color: $cardboard-grey;
+        
+        ul
+        {
+            margin-bottom: 0;
+        }
     }
     
-    nav#right-sidebar li > a, nav#right-sidebar li > a:hover
+    div#right-sidebar
     {
-        color: $cardboard-grey;
+        form.search-form
+        {
+            label
+            {
+                font-weight: normal;
+                
+                input[type="search"]
+                {
+                    width: 100%;
+                    color: $shade-black;
+                }
+            }
+            
+            input[type="submit"]
+            {
+                color: $cardboard-grey;
+            }
+        }
+        
+        li.fallback-loginout
+        {
+            a
+            {
+                color: $cardboard-grey;
+            }
+            
+            text-align: center;
+        }
     }
 }
 
@@ -54,9 +85,8 @@ nav#right-sidebar
         text-align: center;
     }
     
-    nav#right-sidebar
+    div#right-sidebar
     {
-        display: inline-block;
         position: relative;
         border: {
             color: $shade-black;
@@ -71,13 +101,16 @@ nav#right-sidebar
         text-align: left;
     }
     
-    nav#right-sidebar li > a, nav#right-sidebar li > a:hover
+    form.search-form
     {
-        color: $shade-black;
+        label
+        {
+            display: inline-block;
+        }
     }
 }
 
-nav#right-sidebar h1
+div#right-sidebar h1
 {
     font-size: 2.3rem;
     text-decoration-line: underline;
@@ -90,24 +123,23 @@ nav#right-sidebar h1
     text-align: center;
 }
 
-nav#right-sidebar > ul
-{
-    display: flex;
-    flex-direction: column;
-}
-
-nav#right-sidebar li
+div#right-sidebar li.widget
 {
     list-style-type: none;
     margin: {
-        top: 0.12rem;
-        bottom: 0.12rem;
+        bottom: 1rem;
     }
 }
 
-nav#right-sidebar li > span
+// list-style widget formatting (meta, archives widgets)
+li.widget > .widgettitle
 {
-    padding-right: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
 }
 
-
+li.widget > ul > li
+{
+    list-style-type: none;
+}
