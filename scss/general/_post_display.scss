@@ -225,6 +225,20 @@ li.comment > ol.children
     }
 }
 
+li.comment.bypostauthor .comment-author.vcard > b::after
+{
+    content: 'Post author';
+    margin-left: 1rem;
+    background-color: $lite-navy-blue;
+    border-radius: 4px;
+    font-weight: normal;
+    color: $cardboard-grey;
+    padding: {
+        right: 1rem;
+        left: 1rem;
+    }
+}
+
 // END comments formatting
 
 // BEGIN reply form formatting
