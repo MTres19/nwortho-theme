@@ -29,7 +29,7 @@ add_theme_support('html5');
 
 
 // From https://peterwilson.cc/including-wordpress-comment-reply-js/
-add_action('wp_print_scripts', function()
+add_action('wp_enqueue_scripts', function()
     {
         if (is_singular() && comments_open() && get_option('thread_comments'))
         {
@@ -72,5 +72,20 @@ add_action('widgets_init', function()
             'id' => 'global',
             'name' => 'Bottom widget area (all pages)'
         ));
+    }
+);
+
+
+add_action('wp_enqueue_scripts', function()
+    {
+        wp_enqueue_script('nwop-carousel',          get_theme_file_uri('/js/carousel.js'    ));
+        wp_enqueue_script('nwop-footer',            get_theme_file_uri('/js/footer.js'      ));
+        wp_enqueue_script('nwop-homepage',          get_theme_file_uri('/js/homepage.js'    ));
+        wp_enqueue_script('nwop-carousel-logo',     get_theme_file_uri('/js/logo_panel.js'  ));
+        wp_enqueue_script('nwop-nav',               get_theme_file_uri('/js/nav.js'         ));
+        wp_enqueue_script('nwop-polyfills',         get_theme_file_uri('/js/polyfills.js'   ));
+        wp_enqueue_script('nwop-touchswipe-jquery', get_theme_file_uri('/js/touchswipe.js'  ));
+        
+        wp_enqueue_style('nwop-main', get_theme_file_uri('/main.css'));
     }
 );
