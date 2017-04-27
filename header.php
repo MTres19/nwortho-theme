@@ -20,7 +20,7 @@
   
   <!-- jQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.js"></script>-->
 
   <?php wp_head();?> 
 </head>
@@ -34,5 +34,9 @@
         <a href="<?php bloginfo('wpurl');?>"><?php bloginfo('name');?></a>
       </div>
       <span id="header-bar-logo" class="icm-nworthotics-logo header-bar-item"></span>
+      <span id="header-bar-search-button" class="icm-search"></span>
+    </div>
+    <div id="header-bar-search-container">
+        <?php get_search_form();?>
     </div>
   </header>

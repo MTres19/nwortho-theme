@@ -4,10 +4,10 @@ var fullPageShadowUsers = [];
 
 function mobileMenuToggle()
 {
-    var $fullPageShadow = $('#full-page-shadow');
-    var $leftNavDrawer = $('#left-nav-drawer');
+    var $fullPageShadow = jQuery('#full-page-shadow');
+    var $leftNavDrawer = jQuery('#left-nav-drawer');
     
-    if ($('#header-bar-title').css('display') == 'none') // Mobile only (detect breakpoint)
+    if (jQuery('#header-bar-title').css('display') == 'none') // Mobile only (detect breakpoint)
     {
         $leftNavDrawer.toggleClass('left-nav-drawer-hidden');
         
@@ -31,25 +31,25 @@ function mobileMenuToggle()
     }
 }
 
-$(document).ready(function() {
-    var $toggleButton = $('#header-bar-menu-button');
-    var $navDrawerSwipeDetector = $('#nav-drawer-swipe-detector');
+jQuery(document).ready(function() {
+    var $toggleButton = jQuery('#header-bar-menu-button');
+    var $navDrawerSwipeDetector = jQuery('#nav-drawer-swipe-detector');
     
     // Menu button
     $toggleButton.on('click', mobileMenuToggle);
     
     $navDrawerSwipeDetector.swipe({
         swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
-            if ($('#left-nav-drawer').hasClass('left-nav-drawer-hidden'))
+            if (jQuery('#left-nav-drawer').hasClass('left-nav-drawer-hidden'))
             {
                 mobileMenuToggle();
             }
         }
     });
     
-    $('#left-nav-drawer').swipe({
+    jQuery('#left-nav-drawer').swipe({
         swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
-            if (!$('#left-nav-drawer').hasClass('left-nav-drawer-hidden'))
+            if (!jQuery('#left-nav-drawer').hasClass('left-nav-drawer-hidden'))
             {
                 mobileMenuToggle();
             }
@@ -59,7 +59,7 @@ $(document).ready(function() {
     // Remove full page shadow when needed if only used by left nav drawer
     var breakpointDetector = window.matchMedia('(max-width: 750px)');
     breakpointDetector.addListener(function (breakpointDetector) {
-        var $leftNavDrawer = $('#left-nav-drawer');
+        var $leftNavDrawer = jQuery('#left-nav-drawer');
         
         if (fullPageShadowUsers.length = 1
             && fullPageShadowUsers.includes('navdrawer')
@@ -67,7 +67,7 @@ $(document).ready(function() {
         )
         {
             $leftNavDrawer.toggleClass('left-nav-drawer-hidden');
-            $('#full-page-shadow').css('opacity', 0);
+            jQuery('#full-page-shadow').css('opacity', 0);
             // Mark the navdrawer as not using the full page shadow
             fullPageShadowUsers.splice(fullPageShadowUsers.indexOf('navdrawer'), 1);
         }

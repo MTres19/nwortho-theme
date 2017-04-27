@@ -78,13 +78,17 @@ add_action('widgets_init', function()
 
 add_action('wp_enqueue_scripts', function()
     {
+        wp_deregister_script('jquery');
+        
+        wp_enqueue_script('jquery',                 'https://code.jquery.com/jquery-3.2.1.min.js');
+        wp_enqueue_script('nwop-touchswipe-jquery', get_theme_file_uri('/js/touchswipe.js'  ));
+        
         wp_enqueue_script('nwop-carousel',          get_theme_file_uri('/js/carousel.js'    ));
         wp_enqueue_script('nwop-footer',            get_theme_file_uri('/js/footer.js'      ));
         wp_enqueue_script('nwop-homepage',          get_theme_file_uri('/js/homepage.js'    ));
         wp_enqueue_script('nwop-carousel-logo',     get_theme_file_uri('/js/logo_panel.js'  ));
         wp_enqueue_script('nwop-nav',               get_theme_file_uri('/js/nav.js'         ));
         wp_enqueue_script('nwop-polyfills',         get_theme_file_uri('/js/polyfills.js'   ));
-        wp_enqueue_script('nwop-touchswipe-jquery', get_theme_file_uri('/js/touchswipe.js'  ));
         
         wp_enqueue_style('nwop-main', get_theme_file_uri('/main.css'));
     }

@@ -1,6 +1,6 @@
 function advanceCarousel()
 {
-    var $carousel_panels = $('.carousel-panel');
+    var $carousel_panels = jQuery('.carousel-panel');
     
     for (var i = 0; i < $carousel_panels.length; i++)
     {
@@ -54,7 +54,7 @@ function adjustCarouselPanels()
      * reaches 35rem (350px) high, at which point it continues
      * to grow in width but not height.
      */
-    $container = $('div#carousel-container')
+    $container = jQuery('div#carousel-container')
     var containerWidth = $container.width();
     
     if (containerWidth * 5 / 8 < 350)
@@ -67,20 +67,20 @@ function adjustCarouselPanels()
     }
     
     // Make panels height and width of container.
-    var $panels = $('div.carousel-panel');
+    var $panels = jQuery('div.carousel-panel');
     $panels.each(function(index) {
         $panels.eq(index).css('height', $container.height());
         $panels.eq(index).css('width', containerWidth);
     });
 }
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
     adjustCarouselPanels();
-    $(window).resize(adjustCarouselPanels);
+    jQuery(window).resize(adjustCarouselPanels);
     
     var carousel_id = window.setInterval(advanceCarousel, 5000);
     
-    $('#carousel-advance-button').on('click', function() {
+    jQuery('#carousel-advance-button').on('click', function() {
         advanceCarousel();
         window.clearInterval(carousel_id); // Give the user some time to view the panel
         carousel_id = window.setInterval(advanceCarousel, 5000); // Start the carousel again

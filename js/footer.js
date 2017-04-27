@@ -1,11 +1,11 @@
 function adjustFooter()
 {
-    var footerHeight = $('footer#content-footer').outerHeight();
+    var footerHeight = jQuery('footer#content-footer').outerHeight();
     
-    if (footerHeight <= $(window).height() - $('header.fixed-header-bar').outerHeight())
+    if (footerHeight <= jQuery(window).height() - jQuery('header.fixed-header-bar').outerHeight())
     {
-        $('div.content-wrapper').css('margin-bottom', footerHeight);
-        $('footer#content-footer').css('position', 'fixed');
+        jQuery('div.content-wrapper').css('margin-bottom', footerHeight);
+        jQuery('footer#content-footer').css('position', 'fixed');
     }
     else
     {
@@ -13,16 +13,16 @@ function adjustFooter()
          * entire height of the footer. The margin on the content-wrapper
          * is removed and the footer loses its special curtain effect.
          */
-        $('div.content-wrapper').css('margin-bottom', '');
-        $('footer#content-footer').css('position', 'relative');
+        jQuery('div.content-wrapper').css('margin-bottom', '');
+        jQuery('footer#content-footer').css('position', 'relative');
     }
 }
 
 function adjustFooterFlexDirection(footerLinksHorizWidth)
 {
-    var $footerLinks = $('section#footer-links');
-    var contentFooterWidth = $('footer#content-footer').width();
-    var footerLogoWidth = $('div#footer-logo-container').outerWidth();
+    var $footerLinks = jQuery('section#footer-links');
+    var contentFooterWidth = jQuery('footer#content-footer').width();
+    var footerLogoWidth = jQuery('div#footer-logo-container').outerWidth();
     
     if (footerLinksHorizWidth >= contentFooterWidth - footerLogoWidth
         && $footerLinks.css('flex-direction') === 'row'
@@ -40,11 +40,11 @@ function adjustFooterFlexDirection(footerLinksHorizWidth)
 
 function adjustFooterLogoAlignment()
 {
-    var contentFooterWidth = $('footer#content-footer').width();
+    var contentFooterWidth = jQuery('footer#content-footer').width();
     
-    var $footerLogo = $('div#footer-logo-container');
+    var $footerLogo = jQuery('div#footer-logo-container');
     var footerLogoWidth = $footerLogo.outerWidth();
-    var footerLinksWidth = $('section#footer-links').outerWidth();
+    var footerLinksWidth = jQuery('section#footer-links').outerWidth();
     
     if (footerLinksWidth + footerLogoWidth > contentFooterWidth)
     {
@@ -58,13 +58,13 @@ function adjustFooterLogoAlignment()
     }
 }
 
-$(document).ready(function() {
-    var footerLinksHorizWidth = $('section#footer-links').width();
+jQuery(document).ready(function() {
+    var footerLinksHorizWidth = jQuery('section#footer-links').width();
     adjustFooterFlexDirection(footerLinksHorizWidth);
     adjustFooter();
     adjustFooterLogoAlignment();
     
-    $(window).resize(function() {
+    jQuery(window).resize(function() {
         adjustFooterFlexDirection(footerLinksHorizWidth);
         adjustFooter();
         adjustFooterLogoAlignment();
