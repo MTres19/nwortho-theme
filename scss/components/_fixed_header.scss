@@ -62,16 +62,35 @@
     box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.4);
     padding: 1rem;
     
-    form
+    form.search-form
     {
         margin: 0;
+        display: flex;
         
         label
         {
-            span
+            font-weight: normal;
+            flex-grow: 1;
+            margin-bottom: 0;
+            display: block;
+            margin-right: 1rem;
+            
+            span { display: none; }
+            
+            input[type="search"]
             {
-                display: none;
+                width: 100%;
+                color: $shade-black;
+                margin-bottom: 0;
             }
+        }
+        
+        input[type="submit"]
+        {
+            color: $cardboard-grey;
+            flex-shrink: 0;
+            margin-bottom: 0;
+            display: block;
         }
     }
 }
@@ -114,7 +133,7 @@
     
     #header-bar-search-container
     {
-        width: 30rem;
+        width: 40rem;
     }
 }
 
