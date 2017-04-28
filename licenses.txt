@@ -1,0 +1,31 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: NWOP WordPress Theme
+Upstream-Contact: Matthew Trescott <matthewtrescott@gmail.com>
+Source: https://github.com/MTres19/nwortho-theme
+License: AGPL3
+
+Files: /img/carbon_fiber.png
+Copyright: Copyright 2017 Matthew Trescott
+License: CC-BY-SA 4.0
+Comment:
+ Incorporates https://commons.wikimedia.org/wiki/File:Metaleffect3.png Copyright 2008 Soeb.
+ Was originally multi-licensed under the CC-BY-SA 3.0 and other non-DFSG-compatible licenses.
+
+Files: /Skeleton-Sass/*
+Copyright:
+ Copyright 2014 Dave Gamache
+ Copyright 2017 Seth Coelen
+License: MIT
+Comment:
+ Original CSS version by Dave Gamache, ported to SCSS by Seth Coelen.
+ I (Matthew Trescott) made a few modifications to better fit with the
+ theme.
+
+Files: /fonts/*
+Copyright:
+ Copyright 2017 KDE Visual Design Group
+ Copyright 2017 Matthew Trescott
+License: LGPLv3 (?)
+Comment:
+ All icons are made by KDE except for the logo, which was vectorized by
+ Matthew Trescott.
