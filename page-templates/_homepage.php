@@ -1,6 +1,9 @@
 <?php /* Template Name: Home Page */ ?>
 <?php
 
+wp_enqueue_script('nwop-homepage', get_theme_file_uri('/js/homepage.js'));
+
+
 get_header();
 get_template_part('template-parts/nav');
 ?>
