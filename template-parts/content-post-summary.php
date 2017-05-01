@@ -12,7 +12,7 @@
     
     <div class="blog-summary-excerpt">
         <?php
-            the_post_thumbnail('thumbnail');
+            the_post_thumbnail(array(100, 100));
             the_excerpt();
         ?>
         
