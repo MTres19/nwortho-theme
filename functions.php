@@ -94,3 +94,16 @@ add_action('wp_enqueue_scripts', function()
         wp_enqueue_style('nwop-main', get_theme_file_uri('/main.css'));
     }
 );
+
+add_action('customize_register', function(WP_Customize_Manager $wp_customize)
+    {
+        $wp_customize->selective_refresh->add_partial(
+            'blogname',
+            array(
+                'selector' => '#header-bar-title',
+                'render_callback' => function() { bloginfo('name'); }
+            )
+        );
+    }
+);
+add_theme_support('customize-selective-refresh-widgets');

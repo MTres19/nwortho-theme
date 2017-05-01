@@ -1,0 +1,24 @@
+// Make customizer buttons display in the right spots
+
+#header-bar-title
+{
+    position: relative; // Allow positioning edit button
+    
+    .customize-partial-edit-shortcut-blogname
+    {
+        right: -90px;
+    }
+}
+
+#left-nav-drawer
+{
+    ul
+    {
+        position: relative;
+        
+        .customize-partial-edit-shortcut
+        {
+            right: 10px;
+        }
+    }
+}
