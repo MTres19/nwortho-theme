@@ -1,4 +1,4 @@
-<blockquote class="blog-summary-container">
+<blockquote class="blog-summary-container<?php if (is_sticky()): echo ' sticky-summary'; endif;?>">
     
     <?php if (get_post_type() != 'page') :?>
         <p class="blog-summary-post-date"><?php the_date(); ?></p>
@@ -7,7 +7,7 @@
     <h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
     
     <?php if (get_post_type() != 'page') :?>
-        <h4>by <?php the_author(); ?></h4>
+        <h4>by <?php the_author_posts_link(); ?></h4>
     <?php endif;?>
     
     <div class="blog-summary-excerpt">

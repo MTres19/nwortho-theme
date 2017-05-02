@@ -18,6 +18,10 @@ get_template_part('template-parts/nav');
                     get_template_part('template-parts/content-post-summary');
                 }
             }
+            else
+            {
+                echo '<p class="search-page-no-results">No results found.</p>';
+            }
       ?>
     </div>
   </div>

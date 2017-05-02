@@ -48,6 +48,15 @@ blockquote.blog-summary-container > h4
 {
     font-style: italic;
     font-size: 1rem;
+    
+    a
+    {
+        color: $shade-black;
+    }
+    a:hover
+    {
+        text-decoration: underline;
+    }
 }
 
 blockquote.blog-summary-container > div.blog-summary-excerpt
@@ -89,6 +98,35 @@ article.blog-article > p.blog-post-info
     margin-bottom: 1rem;
     font-style: italic;
     color: $charcoal-grey;
+    
+    a
+    {
+        color: $shade-black;
+    }
+    a:hover
+    {
+        text-decoration: underline;
+    }
+}
+
+article.blog-article > .blog-post-taxonomy
+{
+    font-family: $font-family-sans;
+    margin-bottom: 2.5rem;
+    
+    a
+    {
+        color: $shade-black;
+        font-weight: bold;
+    }
+    a:hover
+    {
+        text-decoration: underline;
+    }
+    span
+    {
+        padding-right: 1rem;
+    }
 }
 
 hr.comments-separator
