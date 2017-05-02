@@ -83,6 +83,19 @@ blockquote.blog-summary-container a.read-more-link
     font-style: italic;
 }
 
+// Sticky post formatting
+blockquote.blog-summary-container.sticky-summary
+{
+    padding: 2rem;
+    border: 1px solid $shade-black;
+    
+    span.icm-thumbtack
+    {
+        float: right;
+    }
+}
+
+
 // END post list formatting
 
 // BEGIN single post formatting

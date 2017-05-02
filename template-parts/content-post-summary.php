@@ -1,5 +1,7 @@
 <blockquote class="blog-summary-container<?php if (is_sticky()): echo ' sticky-summary'; endif;?>">
     
+    <?php if (is_sticky()): ?><span class="icm-thumbtack"></span><?php endif;?>
+    
     <?php if (get_post_type() != 'page') :?>
         <p class="blog-summary-post-date"><?php the_date(); ?></p>
     <?php endif;?>

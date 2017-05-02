@@ -1,10 +1,52 @@
 {
   "metadata": {
     "name": "Northwest Orthotics and Prosthetics",
-    "lastOpened": 1493685205425,
-    "created": 1493684834369
+    "lastOpened": 0,
+    "created": 1493762297154
   },
   "iconSets": [
+    {
+      "selection": [
+        {
+          "order": 38,
+          "id": 0,
+          "name": "thumbtack"
+        }
+      ],
+      "id": 2,
+      "metadata": {
+        "name": "Self-made",
+        "designer": "Matthew Trescott",
+        "license": "CC-BY-SA 4.0",
+        "importSize": {
+          "width": 16,
+          "height": 16
+        }
+      },
+      "height": 1024,
+      "prevSize": 32,
+      "icons": [
+        {
+          "id": 0,
+          "paths": [
+            "M0 1023.999l65.615-127.998 382.385-386.242-64-61.759-64-63.999c32-31.426 96-32 128 0l256-255.999c-32-32.002-32-96.001 0-128.001l319.484 319.251c-31.976 32.024-95.975 32.070-128.001 0.094l-255.812 256.185c32.023 31.978 31.497 95.977 0.094 128.001l-64.046-63.953-61.806-63.956-385.963 382.667z"
+          ],
+          "attrs": [
+            {
+              "fill": "rgb(77, 77, 77)"
+            }
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 16,
+          "tags": [
+            "thumbtack"
+          ]
+        }
+      ],
+      "colorThemes": [],
+      "invisible": false
+    },
     {
       "selection": [
         {
@@ -277,7 +319,7 @@
           "attrs": [],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "im-user"
           ],
@@ -289,7 +331,7 @@
             "M0.022 0.022v767.966l191.991 255.989v-255.989h831.964v-767.966h-1023.955zM64.020 64.020h895.961v639.973h-895.961v-639.973zM448.003 128.016v63.997h127.995v-63.997h-127.995zM448.003 256.011v383.984h127.995v-383.984h-127.995z"
           ],
           "attrs": [],
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "dialog-information"
           ],
@@ -305,7 +347,7 @@
           "attrs": [],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "draw-cross"
           ],
@@ -319,7 +361,7 @@
           "attrs": [],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "application-menu"
           ],
@@ -333,7 +375,7 @@
           "attrs": [],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "go-home"
           ],
@@ -347,7 +389,7 @@
           "attrs": [],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "grid": 32,
+          "grid": 16,
           "tags": [
             "user-group-new"
           ],
