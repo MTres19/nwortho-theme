@@ -13,6 +13,7 @@
 @import "components/blog_sidebar";
 @import "components/global_sidebar";
 @import "components/pagination";
+@import "components/attachment_page";
 
 @import "general/layout";
 @import "general/post_display";
@@ -20,6 +21,7 @@
 @import "general/404andSearch";
 @import "general/archive_page";
 @import "helper/customizer";
+@import "helper/galleries";
 
 // Resources
 @import "fonts/nworthotics-icons/style.css";

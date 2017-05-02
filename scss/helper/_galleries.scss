@@ -1,0 +1,24 @@
+// Override some WordPress defaults to force galleries to look nice
+
+div.gallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    dl.gallery-item
+    {
+        float: inital;
+        margin:
+        {
+            left: 1rem;
+            right: 1rem;
+        }
+        
+        dt > a > img
+        {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
