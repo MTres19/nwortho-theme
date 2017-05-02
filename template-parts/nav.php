@@ -2,9 +2,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <nav id="left-nav-drawer" class="left-nav-drawer-hidden">
     <?php
+        $left_nav_drawer_menu = _nw_get_menu_by_location('left-nav-menu');
         wp_nav_menu(
             array(
-                'theme_location' => 'left-nav-menu',
+                'menu' => $left_nav_drawer_menu,
                 'menu_class' => '',
                 'menu_id' => 'left-nav-links-list',
                 'container' => false,
