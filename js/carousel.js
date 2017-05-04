@@ -74,8 +74,19 @@ function adjustCarouselPanels()
     });
 }
 
+function resetCarousel()
+{
+    jQuery('.carousel-panel.carousel-current-panel').toggleClass('carousel-current-panel');
+    jQuery('.carousel-panel.carousel-previous-panel').toggleClass('carousel-previous-panel');
+    
+    jQuery('#carousel-container').children().first().toggleClass('carousel-current-panel');
+}
+    
+
 jQuery(document).ready(function() {
     adjustCarouselPanels();
+    
+    jQuery(window).resize(resetCarousel);
     jQuery(window).resize(adjustCarouselPanels);
     
     var carousel_id = window.setInterval(advanceCarousel, 5000);
