@@ -8,7 +8,7 @@ function redistributeCollagePics()
     
     // Calculate number of pictures per panel
     var picsPerPanel = Math.floor(($pictures.length * 400 * 220) / (width * height));
-    var numPanels = Math.ceiling($pictures.length / picsPerPanel);
+    var numPanels = Math.ceil($pictures.length / picsPerPanel);
     
     var $panels = jQuery();
     for (var i = 0; i < numPanels; ++i)
