@@ -1,7 +1,7 @@
 <?php /* Template Name: Home Page */ ?>
 <?php
 
-wp_enqueue_script('nwop-homepage', get_theme_file_uri('/js/homepage.js'));
+wp_enqueue_script('nwop-homepage', get_theme_file_uri('/js/homepage.js'), array('jquery'));
 
 
 get_header();
