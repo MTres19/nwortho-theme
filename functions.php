@@ -19,7 +19,10 @@ function fallback_left_menu()
     wp_page_menu(
         array(
             'menu_class' => '',
-            'container' => false,
+            'menu_id' => 'left-nav-links-list',
+            'container' => 'ul',
+            'before' => false,
+            'after' => false,
         )
     );
 }
