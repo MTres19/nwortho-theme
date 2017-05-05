@@ -14,7 +14,7 @@ jQuery(document).ready(function() {
     var $containers = jQuery('div.text-wrapper-static-home > .container');
     
     jQuery.each(separator_predecessors, function(index, $elements) {
-        var numRows = $elements.length / 2;
+        var numRows = Math.ceil($elements.length / 2);
         $containers.eq(index).append('<div class="row"></div>'.repeat(numRows));
         
         var $rows = $containers.eq(index).children('.row');
