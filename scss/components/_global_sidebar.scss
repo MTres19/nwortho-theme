@@ -10,6 +10,11 @@
     {
         display: inline-block;
     }
+    
+    ol, ul
+    {
+        padding: 0;
+    }
 }
 
 #global-sidebar li
