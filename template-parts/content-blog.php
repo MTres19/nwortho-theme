@@ -5,6 +5,11 @@
     
     <div class="blog-post-taxonomy">
         <div class="categories"><span class="icm-document-open-folder"></span><?php the_category(', ');?></div>
-        <div class="tags"><span class="icm-tag"></span><?php the_tags('');?></div>
+        <?php
+            $temp__tags = get_the_tag_list();
+            if ($temp__tags && !($temp__tags instanceof WP_Error)):
+        ?>
+            <div class="tags"><span class="icm-tag"></span><?php the_tags('');?></div>
+        <?php endif;?>
     </div>
   </article>
