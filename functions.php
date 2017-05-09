@@ -29,6 +29,7 @@ function fallback_left_menu()
 
 add_theme_support('post-thumbnails', array('post'));
 add_theme_support('html5');
+add_theme_support('title-tag');
 
 
 // From https://peterwilson.cc/including-wordpress-comment-reply-js/
