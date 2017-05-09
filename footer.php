@@ -56,6 +56,9 @@
       <span id="footer-logo-nw">NORTHWEST</span>
       <span id="footer-logo-nw-subtitle">Orthotics—Prosthetics</span>
     </div>
+    <div id="footer-credits">
+        Powered by WordPress. <a href="https://github.com/MTres19/nwortho-theme">Theme credits</a>
+    </div>
   </footer>
   
   <?php wp_footer();?>

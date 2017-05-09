@@ -82,3 +82,11 @@ span#footer-logo-nw
 {
     font-size: 2.3rem;
 }
+
+#footer-credits
+{
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    font-style: italic;
+}
