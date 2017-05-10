@@ -1,3 +1,13 @@
+.carousel-collage-panel-title
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $cardboard-grey;
+    top: 1rem;
+    z-index: 1
+}
+
 .carousel-panel-collage-wrapper
 {
     width: 100%;
@@ -15,6 +25,7 @@
     {
         max-width: 320px;
         max-height: 200px;
+        position: relative; // make absolute positioning of captions work
         
         background-color: salmon;
         
@@ -22,6 +33,16 @@
         {
             width: 100%;
             height: auto;
+        }
+        
+        .carousel-collage-caption
+        {
+            position: absolute;
+            bottom: 2rem;
+            color: $cardboard-grey;
+            margin-bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }

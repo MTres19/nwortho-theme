@@ -18,25 +18,31 @@
         </div>
       </div>
       <div class="carousel-panel">
+        <h3 class="carousel-collage-panel-title">Panel title</h3>
         <div class="carousel-panel-collage-wrapper">
           <div class="collage-img-wrapper">
             <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
+            <p class="carousel-collage-caption">Test caption</p>
           </div>
           
           <div class="collage-img-wrapper">
             <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
+            <p class="carousel-collage-caption">Test caption</p>
           </div>
           
           <div class="collage-img-wrapper">
             <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
+            <p class="carousel-collage-caption">Test caption</p>
           </div>
           
           <div class="collage-img-wrapper">
             <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
+            <p class="carousel-collage-caption">Test caption</p>
           </div>
           
           <div class="collage-img-wrapper">
             <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
+            <p class="carousel-collage-caption">Test caption</p>
           </div>
         </div>
       </div>

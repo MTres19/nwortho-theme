@@ -1,5 +1,7 @@
 function redistributeCollagePics()
 {
+    var $panelTitle = jQuery('.carousel-collage-panel-title');
+    
     var $pictures = jQuery('.carousel-panel-collage-wrapper').children();
     var $container = jQuery('#carousel-container');
     var width = $container.innerWidth();
@@ -20,6 +22,7 @@ function redistributeCollagePics()
         }
         
         var $panel = jQuery('<div class="carousel-panel"></div>');
+        $panel.append($panelTitle.clone());
         $panel.append($wrapper);
         
         $panels = $panels.add($panel);
