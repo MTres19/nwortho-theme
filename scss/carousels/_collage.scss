@@ -4,10 +4,24 @@
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
     
-    img
+    background-color: $cool-medium-grey;
+    background-image: url('img/carbon_fiber_dull.png');
+    background-size: 100px;
+    
+    .collage-img-wrapper
     {
-        width: 320px;
-        height: 200px;
+        max-width: 320px;
+        max-height: 200px;
+        
+        background-color: salmon;
+        
+        img
+        {
+            width: 100%;
+            height: auto;
+        }
     }
 }

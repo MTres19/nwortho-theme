@@ -11,6 +11,13 @@ Comment:
  Incorporates https://commons.wikimedia.org/wiki/File:Metaleffect3.png Copyright 2008 Soeb.
  Was originally multi-licensed under the CC-BY-SA 3.0 and other non-DFSG-compatible licenses.
 
+Files: /img/carbon_fiber_dull.png
+Copyright:
+ Copyright 2017 Matthew Trescott
+ Copyright 2017 Sean Rice
+License: CC-BY-SA 4.0
+Comment: Modified to look better as a background by Sean Rice.
+
 Files: /Skeleton-Sass/*
 Copyright:
  Copyright 2014 Dave Gamache

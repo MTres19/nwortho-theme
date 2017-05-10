@@ -19,10 +19,25 @@
       </div>
       <div class="carousel-panel">
         <div class="carousel-panel-collage-wrapper">
-          <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
-          <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
-          <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
-          <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
+          <div class="collage-img-wrapper">
+            <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
+          </div>
+          
+          <div class="collage-img-wrapper">
+            <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
+          </div>
+          
+          <div class="collage-img-wrapper">
+            <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
+          </div>
+          
+          <div class="collage-img-wrapper">
+            <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
+          </div>
+          
+          <div class="collage-img-wrapper">
+            <img src="<?php bloginfo('template_directory');?>/plasma-5-8-lts.jpg" />
+          </div>
         </div>
       </div>
       <div class="carousel-panel">

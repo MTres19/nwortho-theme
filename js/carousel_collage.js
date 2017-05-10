@@ -6,8 +6,8 @@ function redistributeCollagePics()
     var height = $container.innerHeight();
     
     // Calculate number of pictures per panel
-    var numPanels = Math.ceil(($pictures.length * 320 * 200) / (width * height)); // 320 x 200 is essentially min size of carousel (iPhone 5)
-    var picsPerPanel = Math.floor($pictures.length / numPanels);
+    var picsPerPanel = Math.floor(width / 320);
+    var numPanels = Math.ceil($pictures.length / picsPerPanel); // 320 x 200 is essentially min size of carousel (iPhone 5)
     
     var $panels = jQuery();
     for (var i = 0; i < numPanels; ++i)
@@ -29,7 +29,7 @@ function redistributeCollagePics()
     $old_wrappers.parent().remove();
     
     resetCarousel();
-    
+    adjustCarouselPanels();
 }
 
 jQuery(document).ready(function()
