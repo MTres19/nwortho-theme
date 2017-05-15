@@ -1,6 +1,6 @@
 function redistributeCollagePics()
 {
-    var $panelTitle = jQuery('.carousel-collage-panel-title');
+    var $panelTitle = jQuery('.carousel-collage-panel-title').eq(0); // Avoid duplicate titles
     
     var $pictures = jQuery('.carousel-panel-collage-wrapper').children();
     var $container = jQuery('#carousel-container');
