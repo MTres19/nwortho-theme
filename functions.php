@@ -70,15 +70,30 @@ add_action('widgets_init', function()
     {
         register_sidebar(array(
             'id' => 'blog',
-            'name' => 'Right/bottom widget area (blog only)'
+            'name' => 'Right/bottom widget area (blog only)',
+            'description' => 'This widget area is only displayed on blog-related pages.'
         ));
         register_sidebar(array(
             'id' => 'global',
-            'name' => 'Bottom widget area (all pages)'
+            'name' => 'Bottom widget area (all pages)',
+            'description' => 'Displayed below page content but not in the footer.'
+        ));
+        register_sidebar(array(
+            'id' => 'carousel',
+            'name' => 'Homepage photo carousel',
+            'description' => 'Each widget will have its own panel in the carousel. Do not use carousel widgets elsewhere.',
+            'before_widget' => '<div id="%1$s" class="carousel-panel %2$s">',
+            'after_widget' => '</div>'
         ));
     }
 );
 
+add_action('widgets_init', function()
+    {
+        require_once 'widgets/carousel-panel-collage.php';
+        register_widget('WP_Widget_Collage_Carousel_Panel');
+    }
+);
 
 add_action('wp_enqueue_scripts', function()
     {
