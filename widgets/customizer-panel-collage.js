@@ -16,11 +16,13 @@ function addCarouselRenderAreaEventListeners($render_area)
             
             var newImageNumber = newImageNumberText - 1;
             
-            var inputFieldRegex = /widget-nw-collage-panel\[([0-9]+)\]\[images\|([0-9]+)\|(.+)/
+            //var inputFieldRegex = /widget-nw-collage-panel\[([0-9]+)\]\[images\|([0-9]+)\|(.+)/;
             jQuery(this).children('input[name*="attachment_id"]').attr('name', 'widget-nw-collage-panel[' + event.data + '][images|' + newImageNumber.toString() + '|attachment_id]');
-            jQuery(this).children('label[for*="caption"]').attr('for', 'widget-nw-collage-panel-' + event.data + 'imgcaption-' + newImageNumber.toString());
+            
+            jQuery(this).children('label[for*="caption"]').attr('for', 'widget-nw-collage-panel-' + event.data + '-images|' + newImageNumber.toString() + '|caption');
             jQuery(this).children('label[for*="caption"]').text('Image ' + newImageNumberText.toString() + ' caption');
-            jQuery(this).children('input[name*="caption"]').attr('id', 'widget-nw-collage-panel-' + event.data + 'imgcaption-' + newImageNumber.toString());
+            
+            jQuery(this).children('input[name*="caption"]').attr('id', 'widget-nw-collage-panel-' + event.data + '-images|' + newImageNumber.toString() + '|caption');
             jQuery(this).children('input[name*="caption"]').attr('name', 'widget-nw-collage-panel[' + event.data + '][images|' + newImageNumber.toString() + '|caption]');
         });
         
@@ -136,13 +138,16 @@ function addCarouselRenderAreaEventListeners($render_area)
                 + '<button style="float: right;" type="button" class="button replace">Replace image</button>'
                 + '<div style="clear: both;"></div>'
                 + '<input type="hidden" name="widget-nw-collage-panel[' + widget_number + '][images|' + img_number.toString() + '|attachment_id]" />'
-                + '<label for="widget-nw-collage-panel-' + widget_number + 'imgcaption-' + img_number.toString() + '">Image ' + (img_number + 1).toString() + ' caption</label>'
-                + '<input class="widefat" type="text" id="widget-nw-collage-panel-' + widget_number + 'imgcaption-' + img_number.toString() + '" name="widget-nw-collage-panel[' + widget_number + '][images|' + img_number.toString() + '|caption]" /></li>'
+                + '<label for="widget-nw-collage-panel-' + widget_number + '-images|' + img_number.toString() + '|caption">Image ' + (img_number + 1).toString() + ' caption</label>'
+                + '<input class="widefat" type="text" id="widget-nw-collage-panel-' + widget_number + '-images|' + img_number.toString() + '|caption" name="widget-nw-collage-panel[' + widget_number + '][images|' + img_number.toString() + '|caption]" /></li>'
             );
             
             // Add event handlers
             $add_button.siblings('ol').children().last().children('button.button.remove').click(widget_number, imageRemoveHandlerFunction);
             $add_button.siblings('ol').children().last().children('button.button.replace').click(widget_number, imageReplaceHandlerFunction);
+            
+            // Save attachment ID
+            $add_button.siblings('ol').children().last().children('input[type="hidden"][name*="attachment_id"]').val(json.id);
         });
         
         file_frame.open();

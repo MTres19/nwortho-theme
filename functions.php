@@ -68,6 +68,9 @@ function _nw_get_menu_by_location($location) {
 
 add_action('widgets_init', function()
     {
+        require_once 'widgets/carousel-panel-collage.php';
+        register_widget('WP_Widget_Collage_Carousel_Panel');
+        
         register_sidebar(array(
             'id' => 'blog',
             'name' => 'Right/bottom widget area (blog only)',
@@ -85,13 +88,6 @@ add_action('widgets_init', function()
             'before_widget' => '<div id="%1$s" class="carousel-panel %2$s">',
             'after_widget' => '</div>'
         ));
-    }
-);
-
-add_action('widgets_init', function()
-    {
-        require_once 'widgets/carousel-panel-collage.php';
-        register_widget('WP_Widget_Collage_Carousel_Panel');
     }
 );
 
