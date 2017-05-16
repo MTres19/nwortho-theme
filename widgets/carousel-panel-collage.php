@@ -108,7 +108,7 @@ class WP_Widget_Collage_Carousel_Panel extends WP_Widget
             echo '<button style="float: right;" type="button" class="button replace">Replace image</button>';
             echo '<div style="clear: both;"></div>';
             
-            echo '<input type="hidden" name="nw-collage-panel[' . $this->number . '][images.' . $index . '.attachment_id]" value="" />';
+            echo '<input type="hidden" name="widget-nw-collage-panel[' . $this->number . '][images|' . $index . '|attachment_id]" value="" />';
             
             // Image ($index + 1) caption
             echo '<label for="widget-nw-collage-panel-'
@@ -122,13 +122,13 @@ class WP_Widget_Collage_Carousel_Panel extends WP_Widget
                     . $this->number
                     . 'imgcaption-'
                     . $index
-                    . '" name="nw-collage-panel[' . $this->number . '][images.' . $index . '.caption]" />';
+                    . '" name="widget-nw-collage-panel[' . $this->number . '][images|' . $index . '|caption]" />';
             
             echo '</li>';
         }
         echo '</ol>';
         
-        echo '<button style="width: 100%;" type="button" class="button new">Add new image</button>';
+        echo '<button style="width: 100%; margin-bottom: 10px;" type="button" class="button new">Add new image</button>';
         
         echo '</div>'; // render area
     }
