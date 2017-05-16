@@ -95,11 +95,11 @@ class WP_Widget_Collage_Carousel_Panel extends WP_Widget
             // Image preview
             if (!empty($image['attachment_id']))
             {
-                echo '<img alt="" src="' . wp_get_attachment_url($image['attachment_id']) . '" />';
+                echo '<img style="width: 100%; alt="" src="' . wp_get_attachment_url($image['attachment_id']) . '" />';
             }
             else
             {
-                echo '<img alt="" src="' . get_bloginfo('template_directory') . '/plasma-5-8-lts.jpg" />';
+                echo '<img style="width: 100%; alt="" src="' . get_bloginfo('template_directory') . '/plasma-5-8-lts.jpg" />';
             }
             
             // Image selector

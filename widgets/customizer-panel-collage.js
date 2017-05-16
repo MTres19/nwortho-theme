@@ -132,7 +132,7 @@ function addCarouselRenderAreaEventListeners($render_area)
             
             $add_button.siblings('ol').append(
                 '<li><span class="customize-control-title">Image ' + (img_number + 1).toString() + '</span>'
-                + '<img alt="" src="' + json.url + '" />'
+                + '<img style="width: 100%" alt="" src="' + json.url + '" />'
                 + '<div style="clear: both;"></div>'
                 + '<button style="float:left;" type="button" class="button remove">Remove image</button>'
                 + '<button style="float: right;" type="button" class="button replace">Replace image</button>'
