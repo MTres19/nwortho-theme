@@ -5,8 +5,6 @@ function addCarouselRenderAreaEventListeners($render_area)
     
     var imageRemoveHandlerFunction = function(event) {
         // Remove entire containing <li> and renumber forms and text
-        console.log('Remove image, widget number');
-        console.log(event.data);
         
         jQuery(event.target).parent().nextAll().each(function(index) {
             var imageNumberTextRegex = /([0-9]+)/;
@@ -30,8 +28,6 @@ function addCarouselRenderAreaEventListeners($render_area)
     };
     var imageReplaceHandlerFunction = function(event) {
         // Use wp.media stuff to show popup and fill hidden input field with attachment ID
-        console.log('Replace image, widget number');
-        console.log(event.data);
         
         var $image_inputs = 
             {
@@ -77,8 +73,6 @@ function addCarouselRenderAreaEventListeners($render_area)
     };
     var imageNewHandlerFunction = function(event) {
         // Use wp.media stuff to show popup and add new li if image is chosen
-        console.log('Add image, widget number');
-        console.log(event.data);
         
         var $add_button = jQuery(event.target);
         var widget_number = event.data;
@@ -173,14 +167,14 @@ function addCarouselRenderAreaEventListeners($render_area)
 
 jQuery(document).ready(function() {
     setTimeout(function() {
-        insertionQ("li.customize-control-widget_form[id^='customize-control-widget_nw-collage-panel-'] > *").every(function() {
+        insertionQ.config({ strictlyNew: false });
+        insertionQ('li.customize-control-widget_form[id^="customize-control-widget_nw-collage-panel-"] > *').every(function() {
             
-            insertionQ("li.customize-control-widget_form[id^='customize-control-widget_nw-collage-panel-'] > div[id*='nw-collage-panel'] > .widget-inside > .form > .widget-content > .nw-collage-settings-render").every(function(render_area) {
+            insertionQ('li.customize-control-widget_form[id^="customize-control-widget_nw-collage-panel-"] > div[id*="nw-collage-panel"] > .widget-inside > .form > .widget-content > .nw-collage-settings-render').every(function(render_area) {
                 
                 $render_area = jQuery(render_area);
                 addCarouselRenderAreaEventListeners($render_area);
             });
         });
-        console.log("Ready---test collage");
     }, 1000); // Wait for customizer to replace __i__ with the real widget number
 });

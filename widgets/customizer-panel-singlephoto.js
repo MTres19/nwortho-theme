@@ -1,9 +1,10 @@
 jQuery(document).ready(function() {
     setTimeout(function() {
+        insertionQ.config({ strictlyNew: false });
         insertionQ('li.customize-control-widget_form[id^="customize-control-widget_nw-single-photo-panel"] > *').every(function() {
             insertionQ('li.customize-control-widget_form[id^="customize-control-widget_nw-single-photo-panel"] > div.widget > .widget-inside > .form > .widget-content > img').every(function(render_area_children) {
+                
                 var $render_area = jQuery(render_area_children).eq(0).parent();
-                console.log("hello");
                 $render_area.children('button.button.replace').click(function(event) {
                     var $image_inputs = 
                     {
@@ -49,7 +50,6 @@ jQuery(document).ready(function() {
                 });
             });
         });
-        console.log('Ready---test single photo');
     }, 1000); // Wait for customizer to replace __i__ with the real widget number
     
 });
