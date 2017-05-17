@@ -15,6 +15,7 @@ class WP_Widget_Collage_Carousel_Panel extends WP_Widget
     public function widget($args, $instance_options)
     {
         echo $args['before_widget'];
+        echo '<div class="carousel-panel">';
         $title = empty($instance_options['panel_title']) ? '' : $instance_options['panel_title'];
         echo '<h3 class="carousel-collage-panel-title">' . $title . '</h3>';
         echo '<div class="carousel-panel-collage-wrapper">';
@@ -22,7 +23,7 @@ class WP_Widget_Collage_Carousel_Panel extends WP_Widget
         // Default
         if (empty($instance_options['images']))
         {
-            $instance_options['images'] = array(array('caption_text' => 'Test caption'));
+            $instance_options['images'] = array(array('caption' => 'Test caption'));
         }
         
         foreach ($instance_options['images'] as $image)
@@ -38,10 +39,11 @@ class WP_Widget_Collage_Carousel_Panel extends WP_Widget
                 echo '<img alt="" src="' . get_bloginfo('template_directory') . '/plasma-5-8-lts.jpg" />';
             }
             
-            echo '<p class="carousel-collage-caption">' . $image['caption_text'] . '</p>';
+            echo '<p class="carousel-collage-caption">' . $image['caption'] . '</p>';
             echo '</div>';
         }
         
+        echo '</div>';
         echo '</div>';
         echo $args['after_widget'];
     }
@@ -63,18 +65,15 @@ class WP_Widget_Collage_Carousel_Panel extends WP_Widget
                 true
             );
         }
-        
-        $instance_options = wp_parse_args(
-            $instance_options,
-            array(
+        if (!$instance_options)
+        {
+            $instance_options = array(
                 'panel_title' => '',
                 'images' => array(
-                    array(
-                        'caption_text' => 'Test image'
-                    )
+                    array('caption' => '', 'attachment_id' => '')
                 )
-            )
-        );
+            );
+        }
         echo '<div class="nw-collage-settings-render" id="nw-collage-settings-' . $this->number . '">';
         
         echo '<label for="'. $this->get_field_id('panel_title') . '">Panel title:</label>';

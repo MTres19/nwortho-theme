@@ -14,4 +14,15 @@
     height: 100%;
     width: 100%;
     text-align: center;
+    position: relative; // Make absolute positioning work
+    
+    .carousel-single-photo-caption
+    {
+        position: absolute;
+        bottom: 2rem;
+        color: $cardboard-grey;
+        margin-bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

@@ -10,7 +10,7 @@ get_template_part('template-parts/nav');
   <div id="header-padding"></div>
   
   <div class="content-wrapper">
-    <?php get_template_part('template-parts/carousel'); ?>
+    <?php get_sidebar('carousel'); ?>
     <div class="text-wrapper-static text-wrapper-static-home">
         <?php
             if (have_posts())

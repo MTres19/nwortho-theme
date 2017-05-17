@@ -69,6 +69,7 @@ function addCarouselRenderAreaEventListeners($render_area)
             
             $image_inputs.image_preview.attr('src', json.url);
             $image_inputs.attachment_id.val(json.id);
+            $image_inputs.attachment_id.change(); // Force a refresh
             
         });
         

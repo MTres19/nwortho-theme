@@ -70,6 +70,10 @@ add_action('widgets_init', function()
     {
         require_once 'widgets/carousel-panel-collage.php';
         register_widget('WP_Widget_Collage_Carousel_Panel');
+        require_once 'widgets/carousel-panel-logo.php';
+        register_widget('WP_Widget_Logo_Carousel_Panel');
+        require_once 'widgets/carousel-panel-singlephoto.php';
+        register_widget('WP_Widget_SinglePhoto_Carousel_Panel');
         
         register_sidebar(array(
             'id' => 'blog',
@@ -85,8 +89,8 @@ add_action('widgets_init', function()
             'id' => 'carousel',
             'name' => 'Homepage photo carousel',
             'description' => 'Each widget will have its own panel in the carousel. Do not use carousel widgets elsewhere.',
-            'before_widget' => '<div id="%1$s" class="carousel-panel %2$s">',
-            'after_widget' => '</div>'
+            'before_widget' => '',
+            'after_widget' => ''
         ));
     }
 );
