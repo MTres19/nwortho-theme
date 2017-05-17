@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Northwest Orthotics and Prosthetics",
     "lastOpened": 0,
-    "created": 1493762297154
+    "created": 1495057494742
   },
   "iconSets": [
     {
@@ -10,7 +10,10 @@
         {
           "order": 38,
           "id": 0,
-          "name": "thumbtack"
+          "name": "thumbtack",
+          "prevSize": 32,
+          "code": 59664,
+          "tempChar": ""
         }
       ],
       "id": 2,
@@ -50,12 +53,20 @@
     {
       "selection": [
         {
+          "order": 41,
+          "id": 17,
+          "name": "mail-message",
+          "prevSize": 32,
+          "code": 59665,
+          "tempChar": ""
+        },
+        {
           "order": 35,
           "id": 16,
           "name": "window-close",
           "prevSize": 32,
           "code": 59662,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 33,
@@ -63,7 +74,7 @@
           "name": "search",
           "prevSize": 32,
           "code": 59663,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 32,
@@ -71,7 +82,7 @@
           "name": "tag",
           "prevSize": 32,
           "code": 59661,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 31,
@@ -79,7 +90,7 @@
           "name": "news-subscribe",
           "prevSize": 32,
           "code": 59660,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 30,
@@ -87,7 +98,7 @@
           "name": "feed-subscribe",
           "prevSize": 32,
           "code": 59655,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 29,
@@ -95,7 +106,7 @@
           "name": "document-preview-archive",
           "prevSize": 32,
           "code": 59656,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 28,
@@ -103,7 +114,7 @@
           "name": "document-open-folder",
           "prevSize": 32,
           "code": 59657,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 27,
@@ -111,7 +122,7 @@
           "name": "system-switch-user",
           "prevSize": 32,
           "code": 59658,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 26,
@@ -119,7 +130,7 @@
           "name": "media-skip-forward",
           "prevSize": 32,
           "code": 59659,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 24,
@@ -127,7 +138,7 @@
           "name": "im-user",
           "prevSize": 32,
           "code": 59654,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 21,
@@ -135,7 +146,7 @@
           "name": "dialog-information",
           "prevSize": 32,
           "code": 59650,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 15,
@@ -143,7 +154,7 @@
           "name": "draw-cross",
           "prevSize": 32,
           "code": 59651,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 23,
@@ -151,7 +162,7 @@
           "name": "application-menu",
           "prevSize": 32,
           "code": 59652,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 17,
@@ -159,7 +170,7 @@
           "name": "go-home",
           "prevSize": 32,
           "code": 59653,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 20,
@@ -167,7 +178,7 @@
           "name": "user-group-new",
           "prevSize": 32,
           "code": 59648,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 1,
@@ -185,6 +196,23 @@
       "height": 1024,
       "prevSize": 32,
       "icons": [
+        {
+          "id": 17,
+          "paths": [
+            "M0 73.143v877.714h1024v-877.714h-1024zM124.857 146.286h774.286l-387.143 387.143-387.143-387.143zM73.143 198l287.714 287.714-287.714 335.714v-623.429zM950.857 198v623.571l-287.714-335.857 287.714-287.714zM412.714 537.571l99.286 99.286 99.286-99.286 291.429 340.143h-781.571l291.571-340.143z"
+          ],
+          "attrs": [
+            {
+              "fill": "rgb(77, 77, 77)"
+            }
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 16,
+          "tags": [
+            "mail-message"
+          ]
+        },
         {
           "id": 16,
           "paths": [
@@ -408,7 +436,7 @@
           "name": "nworthotics-logo",
           "prevSize": 32,
           "code": 59649,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 0,
