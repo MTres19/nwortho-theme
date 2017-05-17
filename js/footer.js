@@ -2,7 +2,8 @@ function adjustFooter()
 {
     var footerHeight = jQuery('footer#content-footer').outerHeight();
     
-    if (footerHeight <= jQuery(window).height() - jQuery('header.fixed-header-bar').outerHeight())
+    if (!(/iPhone|iPad|iPod/i.test(navigator.userAgent))
+        && footerHeight <= jQuery(window).height() - jQuery('header.fixed-header-bar').outerHeight())
     {
         jQuery('div.content-wrapper').css('margin-bottom', footerHeight);
         jQuery('footer#content-footer').css('position', 'fixed');
@@ -12,6 +13,10 @@ function adjustFooter()
         /* In this case, the screen is not tall enough to display the
          * entire height of the footer. The margin on the content-wrapper
          * is removed and the footer loses its special curtain effect.
+         * 
+         * Or, we're displaying on an Apple device that doesn't understand
+         * how to properly display fixed position elements with z-index.
+         * I think desktop WebKit is OK. (Tested QupZilla)
          */
         jQuery('div.content-wrapper').css('margin-bottom', '');
         jQuery('footer#content-footer').css('position', 'relative');

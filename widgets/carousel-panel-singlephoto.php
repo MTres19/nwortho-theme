@@ -47,7 +47,8 @@ class WP_Widget_SinglePhoto_Carousel_Panel extends WP_Widget
                 . (!empty($instance_options['attachment_id']) ? wp_get_attachment_url($instance_options['attachment_id']) : get_theme_file_uri('plasma-5-8-lts.jpg'))
                 . '" />';
         echo '<button type="button" style="width: 100%;" class="button replace">Replace image</button>';
-        echo '<input type="hidden" name="' . $this->get_field_name('attachment_id') . '" />';
+        echo '<input type="hidden" name="' . $this->get_field_name('attachment_id') . '" value="'
+                . (empty($instance_options['attachment_id']) ? '' : $instance_options['attachment_id']) . '" />';
         
         echo '<label for="' . $this->get_field_id('caption') . '">Image caption</label>';
         echo '<input class="widefat" type="text" id="'
