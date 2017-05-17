@@ -23,7 +23,7 @@ class WP_Widget_Collage_Carousel_Panel extends WP_Widget
         // Default
         if (empty($instance_options['images']))
         {
-            $instance_options['images'] = array(array('caption' => 'Test caption'));
+            $instance_options['images'] = array(array('caption' => ''));
         }
         
         foreach ($instance_options['images'] as $image)
