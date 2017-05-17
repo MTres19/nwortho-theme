@@ -24,18 +24,18 @@
     padding: 0;
 }
 
-#left-nav-links-list > li
+#left-nav-links-list li
 {
     display: block;
 }
 
-#left-nav-links-list > li > a:hover
+#left-nav-links-list li > a:hover
 {
     background-color: $charcoal-grey;
     border-left-color: $icon-grey;
 }
 
-#left-nav-links-list > li > a
+#left-nav-links-list li > a
 {
     display: block;
     color: $cardboard-grey;
@@ -56,7 +56,7 @@
     transition-duration: 0.5s;
 }
 
-#left-nav-links-list > li > a > span::before
+#left-nav-links-list li > a > span::before
 {
     padding-right: 1rem;
 }
