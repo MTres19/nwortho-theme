@@ -11,7 +11,9 @@ Comment:
  Incorporates https://commons.wikimedia.org/wiki/File:Metaleffect3.png Copyright 2008 Soeb.
  Was originally multi-licensed under the CC-BY-SA 3.0 and other non-DFSG-compatible licenses.
 
-Files: /img/carbon_fiber_dull.png
+Files:
+ /img/carbon_fiber_dull.png
+ /img/carbon_fiber_dull_small.png
 Copyright:
  Copyright 2017 Matthew Trescott
  Copyright 2017 Sean Rice
@@ -36,3 +38,52 @@ License: LGPLv3 (?)
 Comment:
  All icons are made by KDE except for the logo, which was vectorized by
  Matthew Trescott.
+
+Files: /js/*
+Copryight: Copyright 2017 Matthew Trescott
+License: AGPL3
+Comment: May incorporate other works published online. See comments.
+
+Files: /js/insertionQ.js
+Copyright: Copyright 2017 Zbyszek Tenerowicz (naugtur)
+License: MIT
+Comment: https://github.com/naugtur/insertionQuery
+
+Files: /js/polyfills.js
+Copyright: Public Domain (Mozilla Developer Network Wiki)
+License: Public Domain
+
+Files: /js/touchswipe.js
+Copyright: Copyright 2017 Matt Bryson and others
+License: MIT and GPLv2
+Comment: https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+
+Files:
+ /page-templates/*
+ /scss/*
+ /template-parts/*
+ /widgets/*
+ /404.php
+ /archive.php
+ /attachment.php
+ /comments.php
+ /footer.php
+ /functions.php
+ /header.php
+ /home.php
+ /index.php
+ /page.php
+ /README.md
+ /search.php
+ /sidebar-blog.php
+ /sidebar-carousel.php
+ /sidebar-global.php
+ /single.php
+ /style.css
+Copyright: Copyright 2017 Matthew Trescott (except where noted)
+License: AGPL3
+
+Files: /plasma-5-8-lts.jpg
+Copyright: ????
+License: ???
+Comment: This is used as an example image. Don't display it on your website.
